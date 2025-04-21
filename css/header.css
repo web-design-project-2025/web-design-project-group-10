@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: "nunito", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #fcf9ee;
+}
+
+header {
+  background-color: #fcf9ee;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #d94f30;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  color: #aa3a20;
+} /*CHANGE*/
+
+.log-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.log-buttons button {
+  font-family: "nunito", sans-serif;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login {
+  background-color: #5a764b;
+  color: white;
+  border: none;
+}
+
+.login:hover {
+  background-color: #476038;
+}
+
+.signup {
+  background-color: transparent;
+  color: #5a764b;
+  border: 2px solid #5a764b;
+  font-weight: 700;
+}
+
+.signup:hover {
+  background-color: #5a764b;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #d94f30;
+  display: block;
+  border-radius: 2px;
+}
+.menu-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+/* responsiveness */
+@media (max-width: 990px) {
+  .menu-container {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fcf9ee;
+    display: none;
+    padding: 2rem;
+    box-shadow: 4px 4px 10px #dbd1ca;
+    z-index: 1000;
+  }
+
+  .menu-container.show {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 0.2rem 0;
+  }
+
+  .log-buttons {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1.2rem;
+    align-items: center;
+  }
+
+  .log-buttons button {
+    width: 70%;
+    text-align: center;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
