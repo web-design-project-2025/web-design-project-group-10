@@ -1,15 +1,18 @@
 [
   {
+    "id": 1,
     "title": "MISO",
     "icon": "🍜",
     "tip": "Soak your tofu before frying – thank us later."
   },
   {
+    "id": 2,
     "title": "TOFU",
     "icon": "🥡",
     "tip": "Soak your tofu before frying – thank us later."
   },
   {
+    "id": 3,
     "title": "GINGER",
     "icon": "🫚",
     "tip": "Grate ginger frozen – no mess, just magic."
