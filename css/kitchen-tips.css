@@ -11,3 +11,15 @@ h2 {
   color: #28396c;
   text-align: center;
 }
+
+#quick-tips-card {
+  border: 2px solid #e0a800;
+}
+
+#quick-tips-card h1 {
+  font-size: 1.2rem;
+}
+
+#quick-tips-card h2 {
+  font-size: 1rem;
+}
