@@ -26,14 +26,14 @@ async function loadQuickTips() {
   const response = await fetch("json/quick-tips.json");
   const quickTips = await response.json();
 
-  const randomTip = quickTips[Math.floor(Math.random() * 3)];
+  const randomTip = quickTips[Math.floor(Math.random() * 9)];
 
   const card = document.createElement("div");
   card.classList.add("tip-card");
 
   card.innerHTML = `
   <h1>${randomTip.title}</h1>
-  <h1>${randomTip.icon}</h1>
+  <h3>${randomTip.icon}</h3>
   <h2>${randomTip.tip}</h2>
 `;
 
@@ -45,3 +45,27 @@ async function loadQuickTips() {
 loadQuickTips();
 loadQuickTips();
 loadQuickTips();
+
+async function loadKitchenTips() {
+  const response = await fetch("json/kitchen-tips.json");
+  const kitchenTips = await response.json();
+
+  const tipElement = kitchenTips[0];
+
+  const card = document.createElement("div");
+  card.classList.add("kitchen-tip-card");
+
+  card.innerHTML = `
+    <img src="${tipElement.img}" alt="${tipElement.title}" class="tip-image" />
+      <figure>
+        <h1>${tipElement.title}</h1>
+        <h2>${tipElement.tip}</h2>
+      </figure>
+  `;
+
+  const cardContainer = document.querySelector("#kitchen-tips");
+
+  cardContainer.appendChild(card);
+}
+
+loadKitchenTips();
