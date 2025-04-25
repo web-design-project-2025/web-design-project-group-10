@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes Page</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/recipes.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -12,6 +12,62 @@
   </head>
   <body>
     <div id="header-place"></div>
+
+    <main>
+      <section class="profile-welcome">
+        <img src="" alt="profile image" />
+        <h1>HELLO, MARTIN</h1>
+        <button>SIGN OUT</button>
+      </section>
+
+      <section class="new-recipes"></section>
+      <section class="favourites">
+        <section class="new-recipes">
+          <h2 class="section-title">NEW RECIPES</h2>
+          <p class="section-subtext">Look through our newest recipes</p>
+          <div class="recipes-carousel">
+            <div class="recipe-card">
+              <div class="card-header">
+                <span class="rating">⭐ 4.2</span>
+                <button class="favourite">&#9825;</button>
+              </div>
+              <img src="img/Matcha3.png" alt="Matcha Latte" />
+              <h3>Matcha Latte</h3>
+              <div class="card-meta">
+                <span class="time">⏱ 5–10min</span>
+              </div>
+              <button class="see-more">See more</button>
+            </div>
+
+            <div class="recipe-card">
+              <div class="card-header">
+                <span class="rating">⭐ 4.7</span>
+                <button class="favourite">&#9825;</button>
+              </div>
+              <img src="img/Pancakes.png" alt="Fluffy Pancakes" />
+              <h3>Fluffy Pancakes</h3>
+              <div class="card-meta">
+                <span class="time">⏱ 20–25min</span>
+              </div>
+              <button class="see-more">See more</button>
+            </div>
+
+            <div class="recipe-card">
+              <div class="card-header">
+                <span class="rating">⭐ 4.2</span>
+                <button class="favorite">&#9825;</button>
+              </div>
+              <img src="img/noodles3.png" alt="Noodle Bowl" />
+              <h3>Noodle Bowl</h3>
+              <div class="card-meta">
+                <span class="time">⏱ 25–35min</span>
+              </div>
+              <button class="see-more">See more</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
     <div id="footer-place"></div>
 
     <script src="js/hamburger.js"></script>
