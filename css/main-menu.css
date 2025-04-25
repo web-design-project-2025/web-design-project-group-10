@@ -160,7 +160,9 @@ button {
 }
 
 .recipe-card img {
-  width: 100%;
+  width: auto;
+  height: 10rem;
+  object-fit: cover;
   border-radius: 8px;
   margin: 0.5rem 0;
 }
@@ -189,4 +191,22 @@ button {
   background-color: #fcf9ee;
   border: 2px solid #5b7b44;
   color: #5b7b44;
+}
+
+/* Best Rated Recipes Section */
+.top-rated-recipes {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.top-rated-recipes .section-title {
+  color: #d94f30;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.top-rated-recipes .section-subtext {
+  color: #28396c;
+  font-weight: 500;
+  margin-top: 0.5rem;
 }
