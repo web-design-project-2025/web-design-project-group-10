@@ -6,17 +6,17 @@ body {
   color: #28396c;
 }
 
-h1 {
+main h1 {
   margin: 0;
   font-family: "moby", sans-serif;
   font-weight: 300;
 }
-h2 {
+main h2 {
   margin: 0;
   font-family: "moby", sans-serif;
   font-weight: 300;
 }
-h3 {
+main h3 {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
