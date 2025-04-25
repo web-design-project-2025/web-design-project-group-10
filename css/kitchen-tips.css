@@ -1,3 +1,4 @@
+
 h1 {
   font-family: "moby-monospace", monospace;
   color: #d94f30;
@@ -47,7 +48,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   background-color: #5a764b;
-  color: white;
+  color: #fff;
   border: none;
   display: block;
   align-items: center;
@@ -86,3 +87,4 @@ section {
   font-size: 1rem;
   text-align: left;
 }
+
