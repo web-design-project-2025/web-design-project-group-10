@@ -4,14 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes Page</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main-menu.css" />
     <link rel="stylesheet" href="css/recipes.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="https://use.typekit.net/mhf1mcv.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/pgj1bii.css" />
   </head>
   <body>
     <div id="header-place"></div>
+    <main class="hero-section">
+      <section class="introduction">
+        <div class="intro-text">
+          <h1 class="tagline">THE BEST <br /><span>JAPANESE RECIPES</span></h1>
+          <p class="description">
+            <strong>Explore easy-to-follow recipes</strong>, helpful tips, and
+            the rich stories behind your favourite Japanese dishes. Ready to
+            start cooking?
+          </p>
+          <p class="subtext">Let's make something amazing together!</p>
+          <button class="explore-btn">Explore</button>
+        </div>
+        <div class="intro-image">
+          <img
+            src="img/ramen-illustration.png"
+            alt="Illustration of a ramen bowl"
+          />
+        </div>
+      </section>
+
+      <section class="new-recipes">
+        <h2 class="section-title">NEW RECIPES</h2>
+        <p class="section-subtext">Look through our newest recipes</p>
+        <div class="recipes-carousel">
+          <div class="recipe-card">
+            <div class="card-header">
+              <span class="rating">⭐ 4.2</span>
+              <button class="favourite">&#9825;</button>
+            </div>
+            <img src="img/Matcha3.png" alt="Matcha Latte" />
+            <h3>Matcha Latte</h3>
+            <div class="card-meta">
+              <span class="time">⏱ 5–10min</span>
+            </div>
+            <button class="see-more">See more</button>
+          </div>
+
+          <div class="recipe-card">
+            <div class="card-header">
+              <span class="rating">⭐ 4.7</span>
+              <button class="favourite">&#9825;</button>
+            </div>
+            <img src="img/Pancakes.png" alt="Fluffy Pancakes" />
+            <h3>Fluffy Pancakes</h3>
+            <div class="card-meta">
+              <span class="time">⏱ 20–25min</span>
+            </div>
+            <button class="see-more">See more</button>
+          </div>
+
+          <div class="recipe-card">
+            <div class="card-header">
+              <span class="rating">⭐ 4.2</span>
+              <button class="favorite">&#9825;</button>
+            </div>
+            <img src="img/noodles3.png" alt="Noodle Bowl" />
+            <h3>Noodle Bowl</h3>
+            <div class="card-meta">
+              <span class="time">⏱ 25–35min</span>
+            </div>
+            <button class="see-more">See more</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <div id="footer-place"></div>
 
     <script src="js/hamburger.js"></script>
