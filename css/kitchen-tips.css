@@ -1,6 +1,7 @@
 main h1 {
   font-family: "moby-monospace", monospace;
   color: #d94f30;
+  font-weight: 300;
   text-align: center;
 }
 
