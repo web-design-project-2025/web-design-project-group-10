@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "MISO",
+    "icon": "🍜",
+    "tip": "Add miso at the end of cooking to keep its flavor alive."
+  },
+  {
+    "id": 2,
+    "title": "TOFU",
+    "icon": "🥡",
+    "tip": "Soak your tofu before frying – thank us later."
+  },
+  {
+    "id": 3,
+    "title": "GINGER",
+    "icon": "🫚",
+    "tip": "Grate ginger frozen – no mess, just magic."
+  },
+  {
+    "id": 4,
+    "title": "GARLIC",
+    "icon": "🧄",
+    "tip": "Microwave garlic for 10 seconds and the skin slips right off."
+  },
+  {
+    "id": 5,
+    "title": "RICE",
+    "icon": "🍚",
+    "tip": "Rinse your rice until the water runs clear for fluffier results."
+  },
+  {
+    "id": 6,
+    "title": "SESAME OIL",
+    "icon": "🌰",
+    "tip": "Drizzle sesame oil after cooking to keep the aroma intact."
+  },
+  {
+    "id": 7,
+    "title": "ONIONS",
+    "icon": "🧅",
+    "tip": "Soak sliced onions in cold water to mellow their sharpness."
+  },
+  {
+    "id": 8,
+    "title": "CHILI",
+    "icon": "🌶️",
+    "tip": "Toast dried chilis for deeper flavor before grinding."
+  },
+  {
+    "id": 9,
+    "title": "CITRUS ZEST",
+    "icon": "🍋",
+    "tip": "Zest before you juice – way easier and more flavorful!"
+  }
+]

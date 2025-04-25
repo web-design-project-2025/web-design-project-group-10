@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "img": "img/miso-test-img.jpg",
+    "title": "KITCHEN TIP 1",
+    "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda maxime obcaecati enim suscipit dignissimos, esse laudantium animi odit modi laborum minima soluta expedita eos doloremque cum eius. Dignissimos, alias"
+  },
+  {
+    "id": 2,
+    "img": "img/miso-test-img.jpg",
+    "title": "KITCHEN TIP 2",
+    "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda maxime obcaecati enim suscipit dignissimos, esse laudantium animi odit modi laborum minima soluta expedita eos doloremque cum eius. Dignissimos, alias"
+  },
+  {
+    "id": 3,
+    "img": "img/miso-test-img.jpg",
+    "title": "KITCHEN TIP 3",
+    "tip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda maxime obcaecati enim suscipit dignissimos, esse laudantium animi odit modi laborum minima soluta expedita eos doloremque cum eius. Dignissimos, alias"
+  }
+]
