@@ -46,26 +46,39 @@ loadQuickTips();
 loadQuickTips();
 loadQuickTips();
 
-async function loadKitchenTips() {
+let kitchenTips = [];
+const kitchenContainer = document.getElementById("kitchen-tips");
+
+async function loadKitchenData() {
   const response = await fetch("json/kitchen-tips.json");
-  const kitchenTips = await response.json();
+  const data = await response.json();
+  kitchenTips = data; // eller data.tips om det är inslaget i ett objekt
 
-  const tipElement = kitchenTips[0];
+  renderKitchenTips();
+}
 
+function createKitchenTipElement(tip) {
   const card = document.createElement("div");
   card.classList.add("kitchen-tip-card");
 
   card.innerHTML = `
-    <img src="${tipElement.img}" alt="${tipElement.title}" class="tip-image" />
-      <figure>
-        <h1>${tipElement.title}</h1>
-        <h2>${tipElement.tip}</h2>
-      </figure>
+    <img src="${tip.img}" alt="${tip.title}" class="tip-image" />
+    <figure>
+      <h1>${tip.title}</h1>
+      <h2>${tip.tip}</h2>
+    </figure>
   `;
 
-  const cardContainer = document.querySelector("#kitchen-tips");
-
-  cardContainer.appendChild(card);
+  return card;
 }
 
-loadKitchenTips();
+function renderKitchenTips() {
+  kitchenContainer.innerHTML = "";
+
+  for (let tip of kitchenTips) {
+    const card = createKitchenTipElement(tip);
+    kitchenContainer.appendChild(card);
+  }
+}
+
+loadKitchenData();
