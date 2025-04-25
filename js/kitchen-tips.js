@@ -52,7 +52,7 @@ const kitchenContainer = document.getElementById("kitchen-tips");
 async function loadKitchenData() {
   const response = await fetch("json/kitchen-tips.json");
   const data = await response.json();
-  kitchenTips = data; // eller data.tips om det är inslaget i ett objekt
+  kitchenTips = data;
 
   renderKitchenTips();
 }
@@ -66,8 +66,26 @@ function createKitchenTipElement(tip) {
     <figure>
       <h1>${tip.title}</h1>
       <h2>${tip.tip}</h2>
+      <h2 class="tip-2" style="display: none;">${tip.tip2}</h2>
+          <img src="img/icon-arrow-down.svg" alt="arrow down" class="icon-arrow-down" />
+
     </figure>
   `;
+
+  const arrowDown = card.querySelector(".icon-arrow-down");
+  const tip2Element = card.querySelector(".tip-2");
+
+  arrowDown.addEventListener("click", function (event) {
+    event.preventDefault();
+    const visibleElement = tip2Element.style.display === "block";
+    if (visibleElement) {
+      tip2Element.style.display = "none";
+      arrowDown.style.transform = "rotate(0deg)";
+    } else {
+      tip2Element.style.display = "block";
+      arrowDown.style.transform = "rotate(180deg)";
+    }
+  });
 
   return card;
 }
