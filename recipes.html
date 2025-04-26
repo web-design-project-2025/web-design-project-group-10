@@ -12,8 +12,54 @@
   </head>
   <body>
     <div id="header-place"></div>
-    <div id="footer-place"></div>
+    <header>
+      <img
+        src="img/Recipes1header.png"
+        alt="Header Image"
+        class="header-image"
+      />
+    </header>
 
+    <main>
+      <section class="categories">
+        <h2>Categories</h2>
+        <p>Filter your preferences</p>
+        <div class="categories-list">
+          <div class="category" data-category="Desserts">
+            <img src="" alt="Desserts" />
+            <p>Desserts</p>
+          </div>
+          <div class="category" data-category="Drinks">
+            <img src="" alt="Drinks" />
+            <p>Drinks</p>
+          </div>
+          <div class="category" data-category="Rice & Bowls">
+            <img src="" alt="Rice & Bowls" />
+            <p>Rice & Bowls</p>
+          </div>
+          <div class="category" data-category="Sushi">
+            <img src="" alt="Sushi" />
+            <p>Sushi</p>
+          </div>
+          <div class="category" data-category="Sallads">
+            <img src="" alt="Sallads" />
+            <p>Sallads</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipes">
+        <h2>Recipes</h2>
+        <p>Look through our recipes</p>
+        <div class="recipes-list" id="recipes-list">
+          <!-- Recipe cards will be loaded here -->
+        </div>
+        <button class="more-recipes">More recipes</button>
+      </section>
+    </main>
+    <div id="footer-place"></div>
     <script src="js/components.js"></script>
+    <script src="js/filter-recipes.js"></script>
+    <script src="js/recipe-card.js"></script>
   </body>
 </html>
