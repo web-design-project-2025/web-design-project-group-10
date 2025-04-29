@@ -6,6 +6,12 @@ body {
   color: #28396c;
 }
 
+.clock {
+  color: #cb4325;
+  stroke: currentColor;
+  transition: stroke 0.3s ease;
+}
+
 main h2 {
   color: #d94f30;
   margin-bottom: 0.2em;
@@ -62,6 +68,11 @@ main {
   height: auto;
   max-width: 185px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category:hover {
+  transform: translateY(-10px);
 }
 
 .category img {
@@ -71,7 +82,6 @@ main {
   object-fit: cover;
 }
 .category img:hover {
-  opacity: 70%;
   cursor: pointer;
 }
 #drinks {
@@ -110,27 +120,45 @@ main {
   justify-content: center;
   max-width: 1400px;
   margin: 70px auto;
-  padding: 0 20px;
 }
 
 .recipe-card {
-  border: 2px solid #e0a800;
   border-radius: 12px;
   overflow: hidden;
   background-color: #fcf9ee;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 350px;
-  height: 450px;
+  width: 326px;
+  height: 442px;
   box-shadow: 4px 4px 10px #dbd1ca;
+  border: 3px solid #e0a800;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .recipe-image-wrapper {
   position: relative;
-  width: 100%;
-  height: 300px;
   overflow: hidden;
+  object-fit: cover;
+  border-bottom: 3px solid #e0a800;
+}
+
+.big-image {
+  height: 260px;
+  width: auto;
+  overflow: hidden;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.big-image:hover {
+  transform: scale(1.1);
 }
 
 .recipe-image-wrapper img {
@@ -138,10 +166,11 @@ main {
   height: auto;
   object-fit: cover;
   display: block;
+  opacity: 92%;
 }
 
 .recipe-image-wrapper img:hover {
-  opacity: 70%;
+  opacity: 100%;
 }
 .icon-star {
   position: absolute;
@@ -150,13 +179,14 @@ main {
   background: #fcf9ee;
   padding: 4px 8px;
   border-radius: 20px;
+  border: 3px solid #e0a800;
   display: flex;
   align-items: center;
-  gap: 4px;
-  font-size: 14px;
+  gap: 8px;
+  font-size: 16px;
   color: #28396c;
   font-family: "nunito", sans-serif;
-  font-weight: 700;
+  font-weight: 550;
 }
 
 .icon-heart {
@@ -166,7 +196,7 @@ main {
   background: #fcf9ee;
   padding: 6px;
   border-radius: 50%;
-  border: 2px solid #e0a800;
+  border: 3px solid #e0a800;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,6 +213,7 @@ main {
   color: #28396c;
   font-size: 20px;
   margin-bottom: 8px;
+  margin-top: 15px;
 }
 
 .recipe-details {
@@ -193,18 +224,14 @@ main {
   margin-bottom: 12px;
 }
 
-.recipe-details img {
-  width: 20px;
-  height: 20px;
-}
-
 .recipe-time {
   display: flex;
   align-items: center;
   gap: 5px;
   color: #28396c;
   font-family: "nunito", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
+  margin-bottom: 7px;
 }
 
 .recipe-time img {
@@ -218,11 +245,11 @@ main {
   font-family: "nunito", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  padding: 9px 60px;
+  padding: 6px 60px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 4vh 0 10px;
+  margin-top: 10px 0 10px;
 }
 
 .see-more-button:hover {
