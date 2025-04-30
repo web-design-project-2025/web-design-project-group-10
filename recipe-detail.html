@@ -8,13 +8,74 @@
     <link rel="stylesheet" href="css/recipes.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/recipe-detail.css" />
     <link rel="stylesheet" href="https://use.typekit.net/mhf1mcv.css" />
   </head>
   <body>
     <div id="header-place"></div>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+      <div class="hero-image"></div>
+      <div class="icon-buttons">
+        <img src="" alt="Share icon" />
+        <img src="" alt="Save icon" />
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="recipe-container">
+      <section class="left-panel">
+        <!-- Review -->
+        <div class="review-box">
+          <p class="review-text">
+            “This recipe is really good, but I took it up a notch the second
+            time I made it by adding a little bit of oil to the base!”
+          </p>
+          <div class="review-meta">
+            <img src="" alt="User avatar" />
+            <div>
+              <p class="reviewer">Martin Ivanovic</p>
+              <p class="location">Jönköping, Sweden</p>
+            </div>
+            <div class="likes">❤ 251</div>
+          </div>
+          <p class="rating">★ 4.7 (1303 reviews)</p>
+        </div>
+
+        <section class="ingredients">
+          <h2>INGREDIENTS</h2>
+          <ul class="ingredients-list"></ul>
+        </section>
+      </section>
+
+      <section class="right-panel">
+        <h1 class="recipe-title">Recipe title</h1>
+        <h6 class="recipe-category"></h6>
+
+        <div class="meta-info">
+          <img src="img/CLOCK.png" alt="CLOCK" />
+          <span class="recipe-time"></span> |
+        </div>
+        <div class="recipe-rating"></div>
+        <!-- STEPS -->
+        <div class="nutrition-section">
+          <button id="toggle-nutrition">Show Nutrition Info ▼</button>
+          <div id="nutrition-content" class="hidden"></div>
+        </div>
+        <section class="steps">
+          <h4>Steps</h4>
+          <ol class="steps-list"></ol>
+        </section>
+      </section>
+    </main>
+
     <div id="footer-place"></div>
 
+    <!-- SCRIPTS -->
     <script src="js/hamburger.js"></script>
     <script src="js/components.js"></script>
+    <script src="js/recipe-card.js"></script>
+    <script src="js/recipe-detail.js"></script>
   </body>
 </html>
