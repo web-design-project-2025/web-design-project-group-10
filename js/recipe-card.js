@@ -5,6 +5,7 @@ const recipes = [
     rating: "4.3",
     prepTime: "10-15 min",
     category: "Drinks",
+    dateAdded: "2025-04-17",
   },
   {
     title: "Pancakes",
@@ -12,6 +13,7 @@ const recipes = [
     rating: "4.2",
     prepTime: "10-20 min",
     category: "Desserts",
+    dateAdded: "2025-04-18",
   },
   {
     title: "Chicken Bowl",
@@ -19,6 +21,7 @@ const recipes = [
     rating: "4.3",
     prepTime: "30 min",
     category: "Rice & Bowls",
+    dateAdded: "2025-04-12",
   },
   {
     title: "Cookies",
@@ -26,6 +29,7 @@ const recipes = [
     rating: "4.7",
     prepTime: "40 min",
     category: "Desserts",
+    dateAdded: "2025-04-12",
   },
   {
     title: "Carrot Rice",
@@ -33,6 +37,7 @@ const recipes = [
     rating: "4.9",
     prepTime: "20 min",
     category: "Rice & Bowls",
+    dateAdded: "2025-04-12",
   },
   {
     title: "Blueberry Pie",
@@ -40,6 +45,7 @@ const recipes = [
     rating: "4.7",
     prepTime: "50 min",
     category: "Desserts",
+    dateAdded: "2025-04-12",
   },
   {
     title: "Egg&Shrimp Noodles",
@@ -47,6 +53,7 @@ const recipes = [
     rating: "4.3",
     prepTime: "30 min",
     category: "Rice & Bowls",
+    dateAdded: "2025-04-29",
   },
   {
     title: "Flower Mochi",
@@ -54,6 +61,7 @@ const recipes = [
     rating: "4.9",
     prepTime: "60 min",
     category: "Desserts",
+    dateAdded: "2025-04-18",
   },
   {
     title: "Fried Chicken",
@@ -61,6 +69,7 @@ const recipes = [
     rating: "4.9",
     prepTime: "20 min",
     category: "Lunch",
+    dateAdded: "2025-04-30",
   },
   {
     title: "Kimchi",
@@ -68,6 +77,7 @@ const recipes = [
     rating: "4.2",
     prepTime: "15 min",
     category: "Lunch",
+    dateAdded: "2025-01-12",
   },
   {
     title: "Matcha Original",
@@ -75,6 +85,7 @@ const recipes = [
     rating: "5.0",
     prepTime: "30 min",
     category: "Drinks",
+    dateAdded: "2024-04-12",
   },
   {
     title: "Black Tea",
@@ -82,6 +93,7 @@ const recipes = [
     rating: "4.0",
     prepTime: "5 min",
     category: "Drinks",
+    dateAdded: "2025-04-03",
   },
   {
     title: "Watermellon Drink",
@@ -89,6 +101,7 @@ const recipes = [
     rating: "5.0",
     prepTime: "15 min",
     category: "Drinks",
+    dateAdded: "2025-04-19",
   },
 
   {
@@ -97,6 +110,7 @@ const recipes = [
     rating: "5.0",
     prepTime: "60 min",
     category: "Desserts",
+    dateAdded: "2025-04-16",
   },
   {
     title: "Matcha Rolls",
@@ -104,6 +118,7 @@ const recipes = [
     rating: "4.8",
     prepTime: "80 min",
     category: "Desserts",
+    dateAdded: "2025-04-29",
   },
   {
     title: "Tomato Noodles",
@@ -111,6 +126,7 @@ const recipes = [
     rating: "4.9",
     prepTime: "30 min",
     category: "Rice & Bowls",
+    dateAdded: "2025-04-18",
   },
   {
     title: "Chicken Noodles",
@@ -118,6 +134,7 @@ const recipes = [
     rating: "4.7",
     prepTime: "40 min",
     category: "Rice & Bowls",
+    dateAdded: "2025-04-13",
   },
   {
     title: "Vegetable Noodles",
@@ -125,6 +142,7 @@ const recipes = [
     rating: "4.4",
     prepTime: "20 min",
     category: ["Lunch", "Rice & Bowls"],
+    dateAdded: "2024-04-12",
   },
   {
     title: "Onion Soup",
@@ -132,6 +150,7 @@ const recipes = [
     rating: "4.7",
     prepTime: "40 min",
     category: ["Lunch", "Rice & Bowls"],
+    dateAdded: "2025-04-29",
   },
   {
     title: "Poke Bowl",
@@ -139,6 +158,7 @@ const recipes = [
     rating: "4.9",
     prepTime: "30 min",
     category: "Lunch",
+    dateAdded: "2025-04-29",
   },
   {
     title: "Salmon Bowl",
@@ -146,6 +166,7 @@ const recipes = [
     rating: "5.0",
     prepTime: "40 min",
     category: ["Lunch", "Rice & Bowls"],
+    dateAdded: "2025-04-28",
   },
   {
     title: "Egg Ramen",
@@ -153,6 +174,7 @@ const recipes = [
     rating: "3.2",
     prepTime: "30 min",
     category: ["Lunch", "Rice & Bowls"],
+    dateAdded: "2025-04-21",
   },
   {
     title: "Lemon Ramen",
@@ -160,6 +182,7 @@ const recipes = [
     rating: "3.9",
     prepTime: "20 min",
     category: ["Rice & Bowls", "Lunch"],
+    dateAdded: "2025-03-28",
   },
   {
     title: "Rice Original",
@@ -167,6 +190,7 @@ const recipes = [
     rating: "5.0",
     prepTime: "15 min",
     category: "Lunch",
+    dateAdded: "2025-04-12",
   },
   {
     title: "Vegetable Salad",
@@ -174,6 +198,7 @@ const recipes = [
     rating: "3.0",
     prepTime: "20 min",
     category: "Lunch",
+    dateAdded: "2025-04-16",
   },
   {
     title: "Pink Salad",
@@ -181,6 +206,7 @@ const recipes = [
     rating: "3.8",
     prepTime: "25 min",
     category: "Lunch",
+    dateAdded: "2025-02-2",
   },
   {
     title: "Strawberry Shortcake",
@@ -188,6 +214,7 @@ const recipes = [
     rating: "5.0",
     prepTime: "75 min",
     category: "Desserts",
+    dateAdded: "2025-02-2",
   },
   {
     title: "Avocado Sushi",
@@ -195,6 +222,7 @@ const recipes = [
     rating: "4.9",
     prepTime: "40 min",
     category: ["Lunch", "Sushi"],
+    dateAdded: "2025-02-3",
   },
   {
     title: "Cucumber Sushi",
@@ -202,6 +230,7 @@ const recipes = [
     rating: "5.0",
     prepTime: "45 min",
     category: ["Lunch", "Sushi"],
+    dateAdded: "2025-02-3",
   },
   {
     title: "Fried Sushi",
@@ -209,6 +238,7 @@ const recipes = [
     rating: "4.7",
     prepTime: "45 min",
     category: ["Lunch", "Sushi"],
+    dateAdded: "2025-02-6",
   },
   {
     title: "Salmon Sushi",
@@ -216,6 +246,7 @@ const recipes = [
     rating: "5.0",
     prepTime: "35 min",
     category: ["Lunch", "Sushi"],
+    dateAdded: "2025-03-21",
   },
   {
     title: "Cookies",
@@ -223,5 +254,6 @@ const recipes = [
     rating: "5.0",
     prepTime: "85 min",
     category: "Desserts",
+    dateAdded: "2025-04-12",
   },
 ];
