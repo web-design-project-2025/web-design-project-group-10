@@ -20,7 +20,7 @@ const recipes = [
     ],
     steps: [
       "Sift the matcha powder into a small bowl to remove lumps.",
-      "Add hot water (not boiling) to the matcha and whisk with a bamboo whisk (chasen) or a small frother until smooth and frothy.",
+      "Add hot water (not boiling) to the matcha and whisk with a bamboo whisk or a small frother until smooth and frothy.",
       "Stir in honey or maple syrup to sweeten, adjusting to your taste",
       "Add vanilla extract, cinnamon, and a pinch of salt to the matcha mixture and stir until fully combined.",
       "In a small saucepan, heat the milk and coconut milk together over medium heat until hot but not boiling.",

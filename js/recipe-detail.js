@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleBtn.addEventListener("click", () => {
     nutritionContent.classList.toggle("hidden");
     toggleBtn.textContent = nutritionContent.classList.contains("hidden")
-      ? "Show Nutrition Info ▼"
-      : "Hide Nutrition Info ▲";
+      ? "Nutrition Info ▼"
+      : "Nutrition Info ▲";
   });
 });
