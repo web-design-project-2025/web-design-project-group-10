@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <span>${recipe.prepTime}</span>
             </div>
           </div>
-          <button class="see-more-button">See more</button>
+          <button class="see-more-button" onclick="location.href='recipe-detail.html?id=${recipe.id}'">See more</button>
         </div>
       `;
 

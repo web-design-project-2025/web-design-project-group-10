@@ -1,13 +1,46 @@
 const recipes = [
   {
-    title: "Matcha Latte",
+    id: "matcha-latte",
+    title: "MATCHA LATTE",
     image: "img/matcha1.png",
     rating: "4.3",
     prepTime: "10-15 min",
     category: "Drinks",
     dateAdded: "2025-04-17",
+
+    ingredients: [
+      "1 tsp matcha tea powder",
+      "2 tsp hot water",
+      "1 tsp maple syrup",
+      "1/2 tsp vanilla extract",
+      "1/4 tsp ground cinnamon",
+      "1 pinch sea salt",
+      "1/2 cup milk",
+      "1/2 cup coconut milk",
+    ],
+    steps: [
+      "Sift the matcha powder into a small bowl to remove lumps.",
+      "Add hot water (not boiling) to the matcha and whisk with a bamboo whisk (chasen) or a small frother until smooth and frothy.",
+      "Stir in honey or maple syrup to sweeten, adjusting to your taste",
+      "Add vanilla extract, cinnamon, and a pinch of salt to the matcha mixture and stir until fully combined.",
+      "In a small saucepan, heat the milk and coconut milk together over medium heat until hot but not boiling.",
+      "Pour the warm matcha mixture into a mug.",
+      "Slowly pour the frothed milk into the mug over the matcha.",
+      "Gently stir to combine or leave it layered for a more aesthetic look.",
+    ],
+    nutrition: [
+      { name: "Calories", value: "320 kcal" },
+      { name: "Protein", value: "5g" },
+      { name: "Carbohydrates", value: "40g" },
+      { name: "Fat", value: "15g" },
+    ],
   },
   {
+    id: "pancake",
+
+  },
+  {
+
     title: "Pancakes",
     image: "img/pancakes3.png",
     rating: "4.2",
@@ -16,6 +49,7 @@ const recipes = [
     dateAdded: "2025-04-18",
   },
   {
+    id: "chicken-bowl",
     title: "Chicken Bowl",
     image: "img/sallad1.png",
     rating: "4.3",
@@ -24,6 +58,7 @@ const recipes = [
     dateAdded: "2025-04-12",
   },
   {
+    id: "cookies",
     title: "Cookies",
     image: "img/dessert1.png",
     rating: "4.7",
@@ -32,6 +67,7 @@ const recipes = [
     dateAdded: "2025-04-12",
   },
   {
+    id: "carrot-rice",
     title: "Carrot Rice",
     image: "img/CarrotRice.png",
     rating: "4.9",
@@ -40,6 +76,7 @@ const recipes = [
     dateAdded: "2025-04-12",
   },
   {
+    id: "blueberry-pie",
     title: "Blueberry Pie",
     image: "img/BlueberryPie.png",
     rating: "4.7",
@@ -48,6 +85,7 @@ const recipes = [
     dateAdded: "2025-04-12",
   },
   {
+    id: "egg-shrimp-noodles",
     title: "Egg&Shrimp Noodles",
     image: "img/EggShrimpNoodles.png",
     rating: "4.3",
@@ -56,6 +94,7 @@ const recipes = [
     dateAdded: "2025-04-29",
   },
   {
+    id: "flower-mochi",
     title: "Flower Mochi",
     image: "img/FlowerMochi.png",
     rating: "4.9",
@@ -64,6 +103,7 @@ const recipes = [
     dateAdded: "2025-04-18",
   },
   {
+    id: "fried-chicken",
     title: "Fried Chicken",
     image: "img/FriedChicken.png",
     rating: "4.9",
@@ -72,6 +112,7 @@ const recipes = [
     dateAdded: "2025-04-30",
   },
   {
+    id: "kimchi",
     title: "Kimchi",
     image: "img/Kimchi.png",
     rating: "4.2",
@@ -80,6 +121,7 @@ const recipes = [
     dateAdded: "2025-01-12",
   },
   {
+    id: "matcha-original",
     title: "Matcha Original",
     image: "img/Matcha2.png",
     rating: "5.0",
@@ -88,6 +130,7 @@ const recipes = [
     dateAdded: "2024-04-12",
   },
   {
+    id: "black-tea",
     title: "Black Tea",
     image: "img/tea1.png",
     rating: "4.0",
@@ -96,6 +139,7 @@ const recipes = [
     dateAdded: "2025-04-03",
   },
   {
+    id: "watermellon-drink",
     title: "Watermellon Drink",
     image: "img/drink1.png",
     rating: "5.0",
@@ -105,6 +149,7 @@ const recipes = [
   },
 
   {
+    id: "matcha-mochi",
     title: "Matcha Mochi",
     image: "img/MatchaMochi.png",
     rating: "5.0",
@@ -113,6 +158,7 @@ const recipes = [
     dateAdded: "2025-04-16",
   },
   {
+    id: "matcha-rolls",
     title: "Matcha Rolls",
     image: "img/MatchaRolls.png",
     rating: "4.8",
@@ -121,6 +167,7 @@ const recipes = [
     dateAdded: "2025-04-29",
   },
   {
+    id: "tomato-noodles",
     title: "Tomato Noodles",
     image: "img/Noodles.png",
     rating: "4.9",
@@ -129,6 +176,7 @@ const recipes = [
     dateAdded: "2025-04-18",
   },
   {
+    id: "chicken-noodles",
     title: "Chicken Noodles",
     image: "img/Noodles2.png",
     rating: "4.7",
@@ -137,6 +185,7 @@ const recipes = [
     dateAdded: "2025-04-13",
   },
   {
+    id: "vegetable-noodles",
     title: "Vegetable Noodles",
     image: "img/noodles3.png",
     rating: "4.4",
@@ -145,6 +194,7 @@ const recipes = [
     dateAdded: "2024-04-12",
   },
   {
+    id: "onion-soup",
     title: "Onion Soup",
     image: "img/OnionSoup.png",
     rating: "4.7",
@@ -153,6 +203,7 @@ const recipes = [
     dateAdded: "2025-04-29",
   },
   {
+    id: "poke-bowl",
     title: "Poke Bowl",
     image: "img/Pokebowl2.png",
     rating: "4.9",
@@ -161,6 +212,7 @@ const recipes = [
     dateAdded: "2025-04-29",
   },
   {
+    id: "salmon-bowl",
     title: "Salmon Bowl",
     image: "img/PokebowlSalmon.png",
     rating: "5.0",
@@ -169,6 +221,7 @@ const recipes = [
     dateAdded: "2025-04-28",
   },
   {
+    id: "egg-ramen",
     title: "Egg Ramen",
     image: "img/Ramen1.png",
     rating: "3.2",
@@ -177,6 +230,7 @@ const recipes = [
     dateAdded: "2025-04-21",
   },
   {
+    id: "lemon-ramen",
     title: "Lemon Ramen",
     image: "img/Recipes2.png",
     rating: "3.9",
@@ -185,6 +239,7 @@ const recipes = [
     dateAdded: "2025-03-28",
   },
   {
+    id: "rice-original",
     title: "Rice Original",
     image: "img/rice.png",
     rating: "5.0",
@@ -193,6 +248,7 @@ const recipes = [
     dateAdded: "2025-04-12",
   },
   {
+    id: "vegetable-salad",
     title: "Vegetable Salad",
     image: "img/Sallad2.png",
     rating: "3.0",
@@ -201,6 +257,7 @@ const recipes = [
     dateAdded: "2025-04-16",
   },
   {
+    id: "pink-salad",
     title: "Pink Salad",
     image: "img/Sallad3.png",
     rating: "3.8",
@@ -209,14 +266,45 @@ const recipes = [
     dateAdded: "2025-02-2",
   },
   {
+    id: "strawberry-shortcake",
     title: "Strawberry Shortcake",
     image: "img/shortcake.png",
     rating: "5.0",
     prepTime: "75 min",
     category: "Desserts",
     dateAdded: "2025-02-2",
+
+    ingredients: [
+      "2 cups flour",
+      "1/2 cup sugar",
+      "1 tbsp baking powder",
+      "1/2 cup butter",
+      "1 egg",
+      "1 cup milk",
+      "Strawberries",
+      "Whipped cream",
+    ],
+    steps: [
+      "Preheat the oven to 180°C (350°F).",
+      "Mix dry ingredients together.",
+      "Cut in butter until crumbly.",
+      "Add egg and milk, mix until just combined.",
+      "Pour batter into baking dish and bake 25-30 mins.",
+      "Cool, top with strawberries and whipped cream.",
+    ],
+    nutrition: {
+      calories: "350 kcal",
+      fat: "15g",
+      carbs: "45g",
+      protein: "5g",
+    },
   },
   {
+    id: "avocado-sushi",
+
+  },
+  {
+
     title: "Avocado Sushi",
     image: "img/sushi1.png",
     rating: "4.9",
@@ -225,6 +313,7 @@ const recipes = [
     dateAdded: "2025-02-3",
   },
   {
+    id: "cucumber-sushi",
     title: "Cucumber Sushi",
     image: "img/sushi5.png",
     rating: "5.0",
@@ -233,6 +322,7 @@ const recipes = [
     dateAdded: "2025-02-3",
   },
   {
+    id: "fried-sushi",
     title: "Fried Sushi",
     image: "img/sushi2.png",
     rating: "4.7",
@@ -241,6 +331,7 @@ const recipes = [
     dateAdded: "2025-02-6",
   },
   {
+    id: "salmon-sushi",
     title: "Salmon Sushi",
     image: "img/sushi3.png",
     rating: "5.0",
@@ -249,7 +340,8 @@ const recipes = [
     dateAdded: "2025-03-21",
   },
   {
-    title: "Cookies",
+    id: "japanese-cookies",
+    title: "Japanese Cookies",
     image: "img/JapCook.png",
     rating: "5.0",
     prepTime: "85 min",
