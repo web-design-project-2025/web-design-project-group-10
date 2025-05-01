@@ -37,10 +37,6 @@ const recipes = [
   },
   {
     id: "pancake",
-
-  },
-  {
-
     title: "Pancakes",
     image: "img/pancakes3.png",
     rating: "4.2",
@@ -301,10 +297,8 @@ const recipes = [
   },
   {
     id: "avocado-sushi",
-
   },
   {
-
     title: "Avocado Sushi",
     image: "img/sushi1.png",
     rating: "4.9",
