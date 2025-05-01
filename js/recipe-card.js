@@ -7,6 +7,7 @@ const recipes = [
     prepTime: "10-15 min",
     category: "Drinks",
     dateAdded: "2025-04-17",
+
     ingredients: [
       "1 tsp matcha tea powder",
       "2 tsp hot water",
@@ -36,6 +37,10 @@ const recipes = [
   },
   {
     id: "pancake",
+
+  },
+  {
+
     title: "Pancakes",
     image: "img/pancakes3.png",
     rating: "4.2",
@@ -268,6 +273,7 @@ const recipes = [
     prepTime: "75 min",
     category: "Desserts",
     dateAdded: "2025-02-2",
+
     ingredients: [
       "2 cups flour",
       "1/2 cup sugar",
@@ -295,6 +301,10 @@ const recipes = [
   },
   {
     id: "avocado-sushi",
+
+  },
+  {
+
     title: "Avocado Sushi",
     image: "img/sushi1.png",
     rating: "4.9",
