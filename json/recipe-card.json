@@ -1,0 +1,581 @@
+[
+  {
+    "id": "matcha-latte",
+    "title": "Matcha Latte",
+    "image": "img/matcha1.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.3",
+    "prepTime": "10-15 min",
+    "category": "Drinks",
+    "dateAdded": "2025-04-17",
+    "ingredients": [
+      "1 tsp matcha tea powder",
+      "2 tsp hot water",
+      "1 tsp maple syrup",
+      "1/2 tsp vanilla extract",
+      "1/4 tsp ground cinnamon",
+      "1 pinch sea salt",
+      "1/2 cup milk",
+      "1/2 cup coconut milk"
+    ],
+    "steps": [
+      "Sift the matcha powder into a small bowl to remove lumps.",
+      "Add hot water (not boiling) to the matcha and whisk with a bamboo whisk or a small frother until smooth and frothy.",
+      "Stir in honey or maple syrup to sweeten, adjusting to your taste",
+      "Add vanilla extract, cinnamon, and a pinch of salt to the matcha mixture and stir until fully combined.",
+      "In a small saucepan, heat the milk and coconut milk together over medium heat until hot but not boiling.",
+      "Pour the warm matcha mixture into a mug.",
+      "Slowly pour the frothed milk into the mug over the matcha.",
+      "Gently stir to combine or leave it layered for a more aesthetic look."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+  {
+    "id": "pancake",
+    "title": "Pancakes",
+    "image": "img/pancakes3.png",
+    "rating": "4.2",
+    "hero-img": "img/matcha.jpg",
+    "prepTime": "10-20 min",
+    "category": "Desserts",
+    "dateAdded": "2025-04-18",
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "3 1/2 teaspoons baking powder",
+      "1 teaspoon salt",
+      "1 tablespoon white sugar",
+      "1 1/4 cups milk",
+      "1 egg",
+      "3 tablespoons melted butter",
+      "1 teaspoon vanilla extract"
+    ],
+    "steps": [
+      "In a large bowl, sift together the flour, baking powder, salt, and sugar.",
+      "Make a well in the center and pour in the milk, egg, and melted butter.",
+      "Add the vanilla extract and mix until smooth.",
+      "Preheat a lightly oiled griddle or frying pan over medium-high heat.",
+      "Pour or scoop the batter onto the griddle, using about 1/4 cup for each pancake.",
+      "Brown on both sides and cook until bubbles form and edges are dry.",
+      "Flip the pancake and cook the other side until golden brown.",
+      "Serve hot with your favorite toppings like syrup, fruit, or butter."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+  {
+    "id": "chicken-bowl",
+    "title": "Chicken Bowl",
+    "image": "img/sallad1.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.3",
+    "prepTime": "30 min",
+    "category": "Rice & Bowls",
+    "dateAdded": "2025-04-12",
+    "ingredients": [
+      "2 chicken breasts, sliced",
+      "1 tablespoon olive oil",
+      "1 teaspoon paprika",
+      "Salt and pepper to taste",
+      "1 cup cooked jasmine rice",
+      "1/2 cup steamed broccoli",
+      "1/4 cup shredded carrots",
+      "2 tablespoons teriyaki sauce"
+    ],
+    "steps": [
+      "Season sliced chicken with olive oil, paprika, salt, and pepper.",
+      "Heat a skillet over medium heat and cook chicken until fully cooked, about 6–8 minutes.",
+      "While the chicken cooks, prepare your jasmine rice according to package instructions.",
+      "Steam broccoli until tender, about 4–5 minutes.",
+      "Shred or julienne carrots if not pre-shredded.",
+      "Assemble bowls by placing rice at the bottom.",
+      "Top rice with cooked chicken, broccoli, and carrots.",
+      "Drizzle with teriyaki sauce and serve warm."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+
+  {
+    "id": "cookies",
+    "title": "Cookies",
+    "image": "img/dessert1.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.7",
+    "prepTime": "40 min",
+    "category": "Desserts",
+    "dateAdded": "2025-04-12",
+    "ingredients": [
+      "1/2 cup unsalted butter, softened",
+      "1/2 cup white sugar",
+      "1/2 cup brown sugar",
+      "1 egg",
+      "1 teaspoon vanilla extract",
+      "1 1/2 cups all-purpose flour",
+      "1/2 teaspoon baking soda",
+      "3/4 cup chocolate chips"
+    ],
+    "steps": [
+      "Preheat your oven to 175°C (350°F).",
+      "In a bowl, cream together the butter, white sugar, and brown sugar until smooth.",
+      "Beat in the egg and vanilla extract.",
+      "In a separate bowl, mix flour and baking soda.",
+      "Gradually blend the dry ingredients into the wet mixture.",
+      "Fold in the chocolate chips evenly.",
+      "Drop spoonfuls of dough onto a baking sheet lined with parchment paper.",
+      "Bake for 10–12 minutes or until edges are golden, then cool on a rack."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+  {
+    "id": "carrot-rice",
+    "title": "Carrot Rice",
+    "image": "img/CarrotRice.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.9",
+    "prepTime": "20 min",
+    "category": "Rice & Bowls",
+    "dateAdded": "2025-04-12",
+    "ingredients": [
+      "1 cup cooked white or brown rice",
+      "1 cup grated carrots",
+      "1/4 cup chopped fresh parsley",
+      "2 tablespoons lemon juice",
+      "2 tablespoons olive oil",
+      "1/4 teaspoon salt",
+      "1/4 teaspoon black pepper",
+      "1/4 cup chopped toasted almonds"
+    ],
+    "steps": [
+      "Cook the rice according to package instructions and let it cool.",
+      "Grate the carrots and set aside.",
+      "In a large bowl, combine the cooked rice and grated carrots.",
+      "Add the chopped parsley to the bowl.",
+      "In a small bowl, whisk together the lemon juice, olive oil, salt, and pepper.",
+      "Pour the dressing over the rice and carrot mixture.",
+      "Toss everything together until evenly combined.",
+      "Top with toasted almonds before serving."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+  {
+    "id": "blueberry-pie",
+    "title": "Blueberry Pie",
+    "image": "img/BlueberryPie.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.7",
+    "prepTime": "50 min",
+    "category": "Desserts",
+    "dateAdded": "2025-04-12",
+    "ingredients": [
+      "2 cups fresh or frozen blueberries",
+      "1/2 cup granulated sugar",
+      "2 tablespoons cornstarch",
+      "1 tablespoon lemon juice",
+      "1/2 teaspoon ground cinnamon",
+      "1 package refrigerated pie crusts (2 crusts)",
+      "1 tablespoon butter, cut into small pieces",
+      "1 egg, beaten (for egg wash)"
+    ],
+    "steps": [
+      "Preheat the oven to 200°C (400°F).",
+      "In a bowl, mix blueberries, sugar, cornstarch, lemon juice, and cinnamon.",
+      "Unroll one pie crust into a 9-inch pie pan and press it into the bottom.",
+      "Pour the blueberry mixture into the crust and dot with butter.",
+      "Place the second crust over the filling and crimp the edges to seal.",
+      "Cut small slits in the top crust to allow steam to escape.",
+      "Brush the top crust with the beaten egg for a golden finish.",
+      "Bake for 40–45 minutes, until the crust is golden and filling is bubbly."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+  {
+    "id": "egg-shrimp-noodles",
+    "title": "Egg&Shrimp Noodles",
+    "image": "img/EggShrimpNoodles.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.3",
+    "prepTime": "30 min",
+    "category": "Rice & Bowls",
+    "dateAdded": "2025-04-29",
+    "ingredients": [
+      "200g egg noodles",
+      "150g shrimp, peeled and deveined",
+      "2 eggs, lightly beaten",
+      "2 tablespoons soy sauce",
+      "1 tablespoon sesame oil",
+      "2 garlic cloves, minced",
+      "1 tablespoon vegetable oil",
+      "2 green onions, chopped"
+    ],
+    "steps": [
+      "Cook egg noodles according to package instructions, then drain and set aside.",
+      "Heat vegetable oil in a large pan or wok over medium heat.",
+      "Add garlic and shrimp, stir-fry for 2–3 minutes until shrimp turn pink.",
+      "Push shrimp to the side and pour in beaten eggs, scrambling until just set.",
+      "Add cooked noodles to the pan and toss everything together.",
+      "Pour in soy sauce and sesame oil, mixing well to coat the noodles evenly.",
+      "Cook for another 2–3 minutes, stirring frequently.",
+      "Top with chopped green onions and serve hot."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+  {
+    "id": "flower-mochi",
+    "title": "Flower Mochi",
+    "image": "img/FlowerMochi.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.9",
+    "prepTime": "60 min",
+    "category": "Desserts",
+    "dateAdded": "2025-04-18",
+    "ingredients": [
+      "1 cup glutinous rice flour (mochiko)",
+      "3/4 cup water",
+      "1/4 cup sugar",
+      "Cornstarch or potato starch (for dusting)",
+      "Food coloring (optional, for petals)",
+      "Red bean paste (anko), for filling",
+      "Edible flower petals (optional, for garnish)",
+      "A few drops of vanilla or rose extract (optional)"
+    ],
+    "steps": [
+      "In a microwave-safe bowl, mix glutinous rice flour, water, and sugar until smooth.",
+      "Add food coloring and extract if desired, then stir to combine.",
+      "Microwave on high for 1 minute, stir, then repeat in 30-second intervals until the dough becomes thick and translucent.",
+      "Dust a clean surface with cornstarch or potato starch and transfer the mochi dough onto it.",
+      "Let it cool slightly, then divide into small pieces.",
+      "Flatten each piece into a circle and place a small spoonful of red bean paste in the center.",
+      "Pinch the edges together to seal and form into a round shape.",
+      "Optionally, press edible flower petals onto the top for decoration and chill before serving."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+  {
+    "id": "fried-chicken",
+    "title": "Fried Chicken",
+    "image": "img/FriedChicken.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.9",
+    "prepTime": "20 min",
+    "category": "Lunch",
+    "dateAdded": "2025-04-30",
+    "ingredients": [
+      "1 kg chicken pieces",
+      "2 cups buttermilk",
+      "2 cups all-purpose flour",
+      "1 tsp salt",
+      "1 tsp black pepper",
+      "1 tsp paprika",
+      "1/2 tsp garlic powder",
+      "Vegetable oil for frying"
+    ],
+    "steps": [
+      "Place chicken pieces in a bowl and cover with buttermilk. Marinate in the fridge for at least 2 hours or overnight.",
+      "In another bowl, mix flour with salt, pepper, paprika, and garlic powder.",
+      "Remove chicken from buttermilk, letting excess drip off.",
+      "Coat each piece of chicken thoroughly in the seasoned flour.",
+      "Heat oil in a deep pan to 175°C (350°F).",
+      "Fry chicken in batches without overcrowding the pan.",
+      "Cook for 10–15 minutes, turning occasionally, until golden brown and cooked through.",
+      "Drain on a wire rack or paper towels before serving."
+    ],
+    "nutrition": [
+      { "name": "Calories", "value": "320 kcal" },
+      { "name": "Protein", "value": "5g" },
+      { "name": "Carbohydrates", "value": "40g" },
+      { "name": "Fat", "value": "15g" }
+    ]
+  },
+  {
+    "id": "kimchi",
+    "title": "Kimchi",
+    "image": "img/Kimchi.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.2",
+    "prepTime": "15 min",
+    "category": "Lunch",
+    "dateAdded": "2025-01-12"
+  },
+  {
+    "id": "matcha-original",
+    "title": "Matcha Original",
+    "image": "img/Matcha2.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "30 min",
+    "category": "Drinks",
+    "dateAdded": "2024-04-12"
+  },
+  {
+    "id": "black-tea",
+    "title": "Black Tea",
+    "image": "img/tea1.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.0",
+    "prepTime": "5 min",
+    "category": "Drinks",
+    "dateAdded": "2025-04-03"
+  },
+  {
+    "id": "watermellon-drink",
+    "title": "Watermellon Drink",
+    "image": "img/drink1.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "15 min",
+    "category": "Drinks",
+    "dateAdded": "2025-04-19"
+  },
+  {
+    "id": "matcha-mochi",
+    "title": "Matcha Mochi",
+    "image": "img/MatchaMochi.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "60 min",
+    "category": "Desserts",
+    "dateAdded": "2025-04-16"
+  },
+  {
+    "id": "matcha-rolls",
+    "title": "Matcha Rolls",
+    "image": "img/MatchaRolls.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.8",
+    "prepTime": "80 min",
+    "category": "Desserts",
+    "dateAdded": "2025-04-29"
+  },
+  {
+    "id": "tomato-noodles",
+    "title": "Tomato Noodles",
+    "image": "img/Noodles.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.9",
+    "prepTime": "30 min",
+    "category": "Rice & Bowls",
+    "dateAdded": "2025-04-18"
+  },
+  {
+    "id": "chicken-noodles",
+    "title": "Chicken Noodles",
+    "image": "img/Noodles2.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.7",
+    "prepTime": "40 min",
+    "category": "Rice & Bowls",
+    "dateAdded": "2025-04-13"
+  },
+  {
+    "id": "vegetable-noodles",
+    "title": "Vegetable Noodles",
+    "image": "img/noodles3.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.4",
+    "prepTime": "20 min",
+    "category": ["Lunch", "Rice & Bowls"],
+    "dateAdded": "2024-04-12"
+  },
+  {
+    "id": "onion-soup",
+    "title": "Onion Soup",
+    "image": "img/OnionSoup.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.7",
+    "prepTime": "40 min",
+    "category": ["Lunch", "Rice & Bowls"],
+    "dateAdded": "2025-04-29"
+  },
+  {
+    "id": "poke-bowl",
+    "title": "Poke Bowl",
+    "image": "img/Pokebowl2.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.9",
+    "prepTime": "30 min",
+    "category": "Lunch",
+    "dateAdded": "2025-04-29"
+  },
+  {
+    "id": "salmon-bowl",
+    "title": "Salmon Bowl",
+    "image": "img/PokebowlSalmon.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "40 min",
+    "category": ["Lunch", "Rice & Bowls"],
+    "dateAdded": "2025-04-28"
+  },
+  {
+    "id": "egg-ramen",
+    "title": "Egg Ramen",
+    "image": "img/Ramen1.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "3.2",
+    "prepTime": "30 min",
+    "category": ["Lunch", "Rice & Bowls"],
+    "dateAdded": "2025-04-21"
+  },
+  {
+    "id": "lemon-ramen",
+    "title": "Lemon Ramen",
+    "image": "img/Recipes2.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "3.9",
+    "prepTime": "20 min",
+    "category": ["Rice & Bowls", "Lunch"],
+    "dateAdded": "2025-03-28"
+  },
+  {
+    "id": "rice-original",
+    "title": "Rice Original",
+    "image": "img/rice.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "15 min",
+    "category": "Lunch",
+    "dateAdded": "2025-04-12"
+  },
+  {
+    "id": "vegetable-salad",
+    "title": "Vegetable Salad",
+    "image": "img/Sallad2.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "3.0",
+    "prepTime": "20 min",
+    "category": "Lunch",
+    "dateAdded": "2025-04-16"
+  },
+  {
+    "id": "pink-salad",
+    "title": "Pink Salad",
+    "image": "img/Sallad3.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "3.8",
+    "prepTime": "25 min",
+    "category": "Lunch",
+    "dateAdded": "2025-02-02"
+  },
+  {
+    "id": "strawberry-shortcake",
+    "title": "Strawberry Shortcake",
+    "image": "img/shortcake.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "75 min",
+    "category": "Desserts",
+    "dateAdded": "2025-02-02",
+    "ingredients": [
+      "2 cups flour",
+      "1/2 cup sugar",
+      "1 tbsp baking powder",
+      "1/2 cup butter",
+      "1 egg",
+      "1 cup milk",
+      "Strawberries",
+      "Whipped cream"
+    ],
+    "steps": [
+      "Preheat the oven to 180°C (350°F).",
+      "Mix dry ingredients together.",
+      "Cut in butter until crumbly.",
+      "Add egg and milk, mix until just combined.",
+      "Pour batter into baking dish and bake 25-30 mins.",
+      "Cool, top with strawberries and whipped cream."
+    ],
+    "nutrition": {
+      "calories": "350 kcal",
+      "fat": "15g",
+      "carbs": "45g",
+      "protein": "5g"
+    }
+  },
+  {
+    "id": "avocado-sushi",
+    "title": "Avocado Sushi",
+    "image": "img/sushi1.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.9",
+    "prepTime": "40 min",
+    "category": ["Lunch", "Sushi"],
+    "dateAdded": "2025-02-03"
+  },
+  {
+    "id": "cucumber-sushi",
+    "title": "Cucumber Sushi",
+    "image": "img/sushi5.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "45 min",
+    "category": ["Lunch", "Sushi"],
+    "dateAdded": "2025-02-03"
+  },
+  {
+    "id": "fried-sushi",
+    "title": "Fried Sushi",
+    "image": "img/sushi2.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "4.7",
+    "prepTime": "45 min",
+    "category": ["Lunch", "Sushi"],
+    "dateAdded": "2025-02-06"
+  },
+  {
+    "id": "salmon-sushi",
+    "title": "Salmon Sushi",
+    "image": "img/sushi3.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "35 min",
+    "category": ["Lunch", "Sushi"],
+    "dateAdded": "2025-03-21"
+  },
+  {
+    "id": "japanese-cookies",
+    "title": "Japanese Cookies",
+    "image": "img/JapCook.png",
+    "hero-img": "img/matcha.jpg",
+    "rating": "5.0",
+    "prepTime": "85 min",
+    "category": "Desserts",
+    "dateAdded": "2025-04-12"
+  }
+]

@@ -10,13 +10,6 @@ body {
   color: #28396c;
   line-height: 1.6;
 }
-h6 {
-  font-family: "nunito", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  color: #28396c;
-}
 
 /* Hero */
 .hero {
@@ -36,18 +29,24 @@ h6 {
 .icon-buttons {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 13vw;
   display: flex;
   gap: 15px;
 }
 
-.icon-buttons img {
-  width: 70px;
-  height: 70px;
+#icon {
+  width: 60px;
+  height: 60px;
   background-color: #fcf9ee;
-  border-radius: 50%;
+  border-radius: 20%;
   border: 3px solid #e0a800;
-  padding: 5px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 4px 4px 10px #dbd1ca;
+  transition: transform 0.3s ease;
+}
+#icon:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
 }
 
 /* Main container */
@@ -66,18 +65,34 @@ h6 {
   flex-direction: column;
   gap: 30px;
 }
+.rating {
+  display: flex;
+}
+.rating p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.rating img {
+  margin: 0 10px 0 50px;
+  width: 25px;
+  height: 28px;
+}
 
 /* Review box */
 .review-box {
-  background-color: #fff;
+  background-color: #fcf9ee;
   padding: 20px;
-  border-left: 5px solid #e9855a;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 3px solid #e9a6a6;
+  box-shadow: 4px 4px 10px #dbd1ca;
+  border-radius: 12px;
 }
 
 .review-text {
   font-style: italic;
+  font-family: "nunito", sans-serif;
+  font-weight: 400;
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .review-meta {
@@ -94,25 +109,23 @@ h6 {
 }
 
 .reviewer {
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .location {
-  font-size: 0.9em;
-  color: #666;
+  font-size: 14px;
+  color: #bbc7c9;
+  font-weight: 400;
 }
-
-.likes {
-  margin-left: auto;
-  color: red;
-  font-weight: bold;
-}
-
 .rating {
   margin-top: 10px;
   font-weight: bold;
 }
-
+.likes {
+  color: #d94f30;
+  margin-left: 60px;
+}
 /* Ingredients */
 .ingredients h2 {
   font-size: 24px;
@@ -136,25 +149,23 @@ h6 {
 .ingredients-list input[type="checkbox"] {
   margin-right: 10px;
 }
-
 /* Nutrition Info */
 .nutrition-section {
   margin: 10px 0 20px;
 }
-
 #toggle-nutrition {
   background-color: transparent;
   border: 2px solid #5b7b44;
   font-size: 1em;
   color: #28396c;
   cursor: pointer;
-  padding: 8px 150px 8px 10px;
+  padding: 8px 200px 8px 10px;
   text-align: left;
   border-radius: 20px;
 }
 
 #toggle-nutrition:hover {
-  text-decoration: underline;
+  box-shadow: 4px 4px 10px #dbd1ca;
 }
 
 #nutrition-content {
@@ -188,28 +199,44 @@ h6 {
   color: #d94f30;
   margin-bottom: 0;
 }
-
 .recipe-category {
-  font-size: 15px;
+  font-family: "nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2px;
+  color: #fcf9ee;
 }
 
-.recipe-time,
-.recipe-rating {
-  font-size: 18px;
+.responsive-paragraph {
+  font-family: "nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 0;
   color: #28396c;
 }
-
-.recipe-desc {
-  font-size: 1.1em;
+.recipe-time {
+  font-size: 18px;
+  color: #28396c;
+  border-right: 2px solid #28396c;
+  padding-right: 10px;
+}
+.portions {
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 400;
 }
 
 .meta-info {
   display: FLEX;
-  font-size: 0.9em;
+  margin: 25px 0 15px 0;
 }
 .meta-info img {
-  width: 10px;
-  height: auto;
+  width: auto;
+  margin: 4px;
 }
 
 /* Steps */
@@ -218,7 +245,6 @@ h6 {
   font-weight: 550;
   font-style: normal;
   font-size: 24px;
-  color: #28396c;
   margin-bottom: 10px;
 }
 
@@ -228,11 +254,30 @@ h6 {
   font-style: normal;
   font-size: 18px;
   color: #28396c;
-  padding-left: 20px;
-  list-style: decimal;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: step;
 }
 
 .steps-list li {
   margin-bottom: 10px;
   line-height: 1.5;
+  counter-increment: step;
+  position: relative;
+}
+.steps-list li::before {
+  content: counter(step);
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 3px 10px 5px 10px;
+  margin-right: 10px;
+  line-height: 2em;
+  border: 2px solid #5b7b44;
+  border-radius: 50%;
+  background-color: #fcf9ee;
+  color: #28396c;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
 }

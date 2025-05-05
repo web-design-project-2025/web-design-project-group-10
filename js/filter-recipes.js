@@ -5,7 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentIndex = 0;
   const recipesPerLoad = 8;
-  let currentRecipes = [...recipes];
+  let allRecipes = [];
+  let currentRecipes = [];
+
+  fetch("json/recipe-card.json")
+    .then((response) => response.json())
+    .then((data) => {
+      allRecipes = data;
+      currentRecipes = [...allRecipes];
+      displayRecipes(currentRecipes);
+    });
 
   function displayRecipes(array, reset = false) {
     if (reset) {
@@ -67,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   categoryButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const selectedCategory = button.getAttribute("data-category");
-      currentRecipes = recipes.filter((recipe) => {
+      currentRecipes = allRecipes.filter((recipe) => {
         if (Array.isArray(recipe.category)) {
           return recipe.category.includes(selectedCategory);
         }
