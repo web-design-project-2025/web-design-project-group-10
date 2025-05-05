@@ -162,6 +162,10 @@ section {
   cursor: pointer;
 }
 
+/* ANIMATIONS */
+
+/* RESPONSIVENESS */
+
 @media screen and (max-width: 1000px) {
   #quick-tips-card {
     flex-direction: column;
