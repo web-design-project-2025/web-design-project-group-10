@@ -51,18 +51,19 @@ header {
   justify-content: flex-end;
 }
 
-.log-buttons button {
+.login {
   font-family: "nunito", sans-serif;
-  padding: 6px 14px;
+  padding: 7px 14px;
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-.login {
   background-color: #5a764b;
   color: white;
   border: none;
+}
+.log-buttons a {
+  text-decoration: none;
 }
 
 .login:hover {
@@ -70,6 +71,12 @@ header {
 }
 
 .signup {
+  font-family: "nunito", sans-serif;
+  padding: 7px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   background-color: transparent;
   color: #5a764b;
   border: 2px solid #5a764b;
