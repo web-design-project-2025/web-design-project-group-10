@@ -18,14 +18,19 @@
     <header class="hero">
       <div class="hero-image"></div>
       <div class="icon-buttons">
-        <img src="" alt="Share icon" />
-        <img src="" alt="Save icon" />
+        <img id="icon" src="img/share-icon.png" alt="Share icon" />
+        <img id="icon" src="img/heart-icon.png" alt="like icon" />
       </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main class="recipe-container">
       <section class="left-panel">
+        <div class ="rating">
+          <p>Reviewed by 33 users</p>
+          <img src="img/star-full.png"/>
+        <div class="recipe-rating"></div>
+      </div>
         <!-- Review -->
         <div class="review-box">
           <p class="review-text">
@@ -33,14 +38,13 @@
             time I made it by adding a little bit of oil to the base!”
           </p>
           <div class="review-meta">
-            <img src="" alt="User avatar" />
+            <img src="img/user-avatar.png" alt="User avatar" />
             <div>
               <p class="reviewer">Martin Ivanovic</p>
               <p class="location">Jönköping, Sweden</p>
             </div>
             <div class="likes">❤ 251</div>
           </div>
-          <p class="rating">★ 4.7 (1303 reviews)</p>
         </div>
 
         <section class="ingredients">
@@ -51,13 +55,18 @@
 
       <section class="right-panel">
         <h1 class="recipe-title">Recipe title</h1>
-        <h6 class="recipe-category"></h6>
-
+        <p class="recipe-category"></p>
+        <p class="responsive-paragraph">
+          A delicious and easy-to-follow recipe perfect for any occasion. This
+          dish combines fresh ingredients with simple techniques to deliver
+          great flavor and satisfying results.
+        </p>
         <div class="meta-info">
           <img src="img/CLOCK.png" alt="CLOCK" />
-          <span class="recipe-time"></span> |
+          <span class="recipe-time"></span>
+          <p class="portions"">7 portions</p>
         </div>
-        <div class="recipe-rating"></div>
+
         <!-- STEPS -->
         <div class="nutrition-section">
           <button id="toggle-nutrition">Nutrition Info ▼</button>

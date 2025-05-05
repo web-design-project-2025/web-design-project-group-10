@@ -1,48 +1,57 @@
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const recipeId = params.get("id");
-  const recipe = recipes.find((r) => r.id === recipeId) || recipes[0];
 
-  document.querySelector(".recipe-title").textContent = recipe.title;
-  document.querySelector(".recipe-category").textContent = recipe.category;
-  document.querySelector(".recipe-time").textContent = recipe.prepTime;
-  document.querySelector(".recipe-rating").textContent = recipe.rating;
-  document.querySelector(
-    ".hero-image"
-  ).style.backgroundImage = `url(${recipe.image})`;
+  // Fetch the recipes JSON
+  fetch("json/recipe-card.json")
+    .then((response) => response.json())
+    .then((recipes) => {
+      const recipe = recipes.find((r) => r.id === recipeId) || recipes[0]; // Fallback to the first recipe if not found
 
-  // Ingredients
-  const ingredientsList = document.querySelector(".ingredients-list");
-  ingredientsList.innerHTML = ""; // Clear any previous content
-  recipe.ingredients.forEach((item) => {
-    const li = document.createElement("li");
-    li.innerHTML = `<label><input type="checkbox" /> ${item}</label>`;
-    ingredientsList.appendChild(li);
-  });
+      document.querySelector(".recipe-title").textContent = recipe.title;
+      document.querySelector(".recipe-category").textContent = recipe.category;
+      document.querySelector(".recipe-time").textContent = recipe.prepTime;
+      document.querySelector(".recipe-rating").textContent = recipe.rating;
+      document.querySelector(
+        ".hero-image"
+      ).style.backgroundImage = `url(${recipe["hero-img"]})`;
 
-  // Steps
-  const stepsList = document.querySelector(".steps-list");
-  stepsList.innerHTML = "";
-  recipe.steps.forEach((step) => {
-    const li = document.createElement("li");
-    li.textContent = ` ${step}`;
-    stepsList.appendChild(li);
-  });
+      // Ingredients
+      const ingredientsList = document.querySelector(".ingredients-list");
+      ingredientsList.innerHTML = ""; // Clear any previous content
+      recipe.ingredients.forEach((item) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<label><input type="checkbox" /><span></span> ${item}</label>`;
+        ingredientsList.appendChild(li);
+      });
 
-  // Nutrition Info
-  const nutritionContent = document.getElementById("nutrition-content");
-  recipe.nutrition.forEach((item) => {
-    const p = document.createElement("p");
-    p.textContent = `${item.name}: ${item.value}`;
-    nutritionContent.appendChild(p);
-  });
+      // Steps
+      const stepsList = document.querySelector(".steps-list");
+      stepsList.innerHTML = "";
+      recipe.steps.forEach((step) => {
+        const li = document.createElement("li");
+        li.textContent = ` ${step}`;
+        stepsList.appendChild(li);
+      });
 
-  // Toggle Nutrition
-  const toggleBtn = document.getElementById("toggle-nutrition");
-  toggleBtn.addEventListener("click", () => {
-    nutritionContent.classList.toggle("hidden");
-    toggleBtn.textContent = nutritionContent.classList.contains("hidden")
-      ? "Nutrition Info ▼"
-      : "Nutrition Info ▲";
-  });
+      // Nutrition Info
+      const nutritionContent = document.getElementById("nutrition-content");
+      recipe.nutrition.forEach((item) => {
+        const p = document.createElement("p");
+        p.textContent = `${item.name}: ${item.value}`;
+        nutritionContent.appendChild(p);
+      });
+
+      // Toggle Nutrition
+      const toggleBtn = document.getElementById("toggle-nutrition");
+      toggleBtn.addEventListener("click", () => {
+        nutritionContent.classList.toggle("hidden");
+        toggleBtn.textContent = nutritionContent.classList.contains("hidden")
+          ? "Nutrition Info ▼"
+          : "Nutrition Info ▲";
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading recipe data:", error);
+    });
 });
