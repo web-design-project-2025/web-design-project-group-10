@@ -39,10 +39,13 @@ function createMatchaElement(data) {
     <figure>
       <h1>${data.title}</h1>
       <h2>${data.description}</h2>
-      <h2>${data.extract}</h2>
+      <h2>${data.extract}<a
+              href="${data.content_urls?.desktop?.page}"
+              target="_blank"
+              >here.</a
+            ></h2>
     </figure>
   `;
-
   return card;
 }
 
