@@ -16,3 +16,16 @@ async function loadData() {
 loadData().catch((error) => {
   console.log(error);
 });
+
+let matchaData = [];
+const matchaContainer = document.getElementById("matcha-container");
+
+async function loadMatcha() {
+  const response = await fetch(
+    "https://en.wikipedia.org/api/rest_v1/page/summary/Matcha"
+  );
+  const data = await response.json();
+  matchaData = data;
+
+  renderMatcha();
+}
