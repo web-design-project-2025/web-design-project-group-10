@@ -12,8 +12,55 @@
   </head>
   <body>
     <div id="header-place"></div>
-    <div id="footer-place"></div>
+    <header>
+      <img
+        src="img/Recipes1header.png"
+        alt="Header Image"
+        class="header-image"
+      /><!--ADD THE CAROUSEL HERE-->
+    </header>
 
+    <main>
+      <section class="categories">
+        <h2>CATEGORIES</h2>
+        <p>Filter your preferences</p>
+        <p></p>
+        <div class="categories-list">
+          <div class="category" data-category="Desserts">
+            <img src="img/Category-sweets-min.png" alt="Desserts" />
+            <h5>DESSERTS</h5>
+          </div>
+          <div class="category" data-category="Drinks">
+            <img src="img/Category-drinks-min.png" alt="Drinks" id="drinks" />
+            <h5>DRINKS</h5>
+          </div>
+          <div class="category" data-category="Rice & Bowls">
+            <img src="img/category-rice-min.png" alt="Rice & Bowls" />
+            <h5>RICE&BOWLS</h5>
+          </div>
+          <div class="category" data-category="Sushi">
+            <img src="img/Category-sushi-min.png" alt="Sushi" />
+            <h5>SUSHI</h5>
+          </div>
+          <div class="category" data-category="Lunch">
+            <img src="img/category-sallad-min.png" alt="Lunch" />
+            <h5>LUNCH</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipes">
+        <h2>Recipes</h2>
+        <p>Look through our recipes</p>
+        <div class="recipes-list" id="recipes-list">
+          <!-- Recipe cards will be loaded here -->
+        </div>
+        <button class="more-recipes">More recipes</button>
+      </section>
+    </main>
+    <div id="footer-place"></div>
     <script src="js/components.js"></script>
+    <script src="js/filter-recipes.js"></script>
+    <script src="js/recipe-detail.js"></script>
   </body>
 </html>

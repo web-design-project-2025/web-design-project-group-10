@@ -1,1 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fcf9ee;
+  color: #28396c;
+}
 
+/* Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 13vw;
+  display: flex;
+  gap: 15px;
+}
+
+#icon {
+  width: 60px;
+  height: 60px;
+  background-color: #fcf9ee;
+  border-radius: 20%;
+  border: 3px solid #e0a800;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 4px 4px 10px #dbd1ca;
+  transition: transform 0.3s ease;
+}
+#icon:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+/* Main container */
+.recipe-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Left panel */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.rating {
+  display: flex;
+}
+.rating p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.rating img {
+  margin: 0 10px 0 50px;
+  width: 25px;
+  height: 28px;
+}
+
+/* Review box */
+.review-box {
+  background-color: #fcf9ee;
+  padding: 20px;
+  border: 3px solid #e9a6a6;
+  box-shadow: 4px 4px 10px #dbd1ca;
+  border-radius: 12px;
+}
+
+.review-text {
+  font-style: italic;
+  font-family: "nunito", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review-meta img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.reviewer {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.location {
+  font-size: 14px;
+  color: #bbc7c9;
+  font-weight: 400;
+}
+.rating {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.likes {
+  color: #d94f30;
+  margin-left: 60px;
+}
+/* Ingredients */
+.ingredients h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "moby", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ingredients-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ingredients-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+/* Nutrition Info */
+.nutrition-section {
+  margin: 10px 0 20px;
+}
+#toggle-nutrition {
+  background-color: transparent;
+  border: 2px solid #5b7b44;
+  font-size: 1em;
+  color: #28396c;
+  cursor: pointer;
+  padding: 8px 200px 8px 10px;
+  text-align: left;
+  border-radius: 20px;
+}
+
+#toggle-nutrition:hover {
+  box-shadow: 4px 4px 10px #dbd1ca;
+}
+
+#nutrition-content {
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+/* Right panel */
+.right-panel {
+  background-color: #fcf9ee;
+  padding: 10px 30px 20px 30px;
+  border-radius: 12px;
+  border: 3px solid #e0a800;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: -150px; /* overlap the bottom of hero */
+  z-index: 2;
+  position: relative;
+  box-shadow: 4px 4px 10px #dbd1ca;
+}
+
+.recipe-title {
+  font-family: "moby", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: #d94f30;
+  margin-bottom: 0;
+}
+.recipe-category {
+  font-family: "nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2px;
+  color: #fcf9ee;
+}
+
+.responsive-paragraph {
+  font-family: "nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 0;
+  color: #28396c;
+}
+.recipe-time {
+  font-size: 18px;
+  color: #28396c;
+  border-right: 2px solid #28396c;
+  padding-right: 10px;
+}
+.portions {
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.meta-info {
+  display: FLEX;
+  margin: 25px 0 15px 0;
+}
+.meta-info img {
+  width: auto;
+  margin: 4px;
+}
+
+/* Steps */
+.steps h4 {
+  font-family: "nunito", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.steps-list {
+  font-family: "nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #28396c;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.steps-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  counter-increment: step;
+  position: relative;
+}
+.steps-list li::before {
+  content: counter(step);
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 3px 10px 5px 10px;
+  margin-right: 10px;
+  line-height: 2em;
+  border: 2px solid #5b7b44;
+  border-radius: 50%;
+  background-color: #fcf9ee;
+  color: #28396c;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+}

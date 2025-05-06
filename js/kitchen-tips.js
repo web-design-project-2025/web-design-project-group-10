@@ -1,50 +1,48 @@
-// async function loadQuickTips() {
-//   const response = await fetch("json/quick-tips.json");
-//   const quickTips = await response.json();
-
-//   const tipsHeading = quickTips[0].title;
-//   const tipsIcon = quickTips[0].icon;
-//   const tipsTip = quickTips[0].tip;
-
-//   const headingElement = document.createElement("h1");
-//   const iconElement = document.createElement("h1");
-//   const tipElement = document.createElement("h2");
-
-//   headingElement.innerText = tipsHeading;
-//   iconElement.innerText = tipsIcon;
-//   tipElement.innerText = tipsTip;
-
-//   const bodyElement = document.querySelector("#quick-tips-card");
-//   bodyElement.appendChild(headingElement);
-//   bodyElement.appendChild(iconElement);
-//   bodyElement.appendChild
-// }
-
-// loadQuickTips();
+// QUICK TIPS
 
 async function loadQuickTips() {
   const response = await fetch("json/quick-tips.json");
   const quickTips = await response.json();
 
-  const randomTip = quickTips[Math.floor(Math.random() * 9)];
+  const shuffled = quickTips.sort(() => 0.5 - Math.random());
+  const selected = shuffled.slice(0, 3);
 
-  const card = document.createElement("div");
-  card.classList.add("tip-card");
+  const leftCard = document.querySelector(".tip-card-left");
+  const centerCard = document.querySelector(".tip-card-center");
+  const rightCard = document.querySelector(".tip-card-right");
 
-  card.innerHTML = `
-  <h1>${randomTip.title}</h1>
-  <h3>${randomTip.icon}</h3>
-  <h2>${randomTip.tip}</h2>
+  leftCard.innerHTML = `
+  <h1>${selected[0].title}</h1>
+  <h3>${selected[0].icon}</h3>
+  <h2>${selected[0].tip}</h2>
 `;
 
-  const cardContainer = document.querySelector("#quick-tips-card");
+  centerCard.innerHTML = `
+  <h1>${selected[1].title}</h1>
+  <h3>${selected[1].icon}</h3>
+  <h2>${selected[1].tip}</h2>
+`;
 
-  cardContainer.appendChild(card);
+  rightCard.innerHTML = `
+  <h1>${selected[2].title}</h1>
+  <h3>${selected[2].icon}</h3>
+  <h2>${selected[2].tip}</h2>
+`;
 }
 
 loadQuickTips();
-loadQuickTips();
-loadQuickTips();
+
+// SHUFFLE BUTTON
+
+const shuffleButton = document.querySelector("#shuffle");
+
+shuffleButton?.addEventListener("click", function () {
+  console.log("Shuffle clicked!");
+
+  loadQuickTips();
+});
+
+// LONG TIPS
 
 let kitchenTips = [];
 const kitchenContainer = document.getElementById("kitchen-tips");
@@ -52,7 +50,7 @@ const kitchenContainer = document.getElementById("kitchen-tips");
 async function loadKitchenData() {
   const response = await fetch("json/kitchen-tips.json");
   const data = await response.json();
-  kitchenTips = data; // eller data.tips om det är inslaget i ett objekt
+  kitchenTips = data;
 
   renderKitchenTips();
 }
@@ -66,8 +64,26 @@ function createKitchenTipElement(tip) {
     <figure>
       <h1>${tip.title}</h1>
       <h2>${tip.tip}</h2>
+      <h2 class="tip-2" style="display: none;">${tip.tip2}</h2>
+          <img src="img/icon-arrow-down.svg" alt="arrow down" class="icon-arrow-down" />
+
     </figure>
   `;
+
+  const arrowDown = card.querySelector(".icon-arrow-down");
+  const tip2Element = card.querySelector(".tip-2");
+
+  arrowDown.addEventListener("click", function (event) {
+    event.preventDefault();
+    const visibleElement = tip2Element.style.display === "block";
+    if (visibleElement) {
+      tip2Element.style.display = "none";
+      arrowDown.style.transform = "rotate(0deg)";
+    } else {
+      tip2Element.style.display = "block";
+      arrowDown.style.transform = "rotate(180deg)";
+    }
+  });
 
   return card;
 }
