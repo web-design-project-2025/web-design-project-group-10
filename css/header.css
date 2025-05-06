@@ -1,12 +1,8 @@
-body {
+header {
   margin: 0;
   font-family: "nunito", sans-serif;
   font-weight: 700;
   font-style: normal;
-  background-color: #fcf9ee;
-}
-
-header {
   background-color: #fcf9ee;
 }
 
