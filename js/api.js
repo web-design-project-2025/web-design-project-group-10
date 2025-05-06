@@ -1,3 +1,16 @@
+let matchaData = [];
+const matchaContainer = document.getElementById("matcha-container");
+
+async function loadMatcha() {
+  const response = await fetch(
+    "https://en.wikipedia.org/api/rest_v1/page/summary/Matcha"
+  );
+  const data = await response.json();
+  matchaData = data;
+
+  renderMatcha();
+}
+
 function createMatchaElement(data) {
   const card = document.createElement("div");
   card.classList.add("matcha-card");
