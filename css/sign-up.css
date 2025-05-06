@@ -13,6 +13,7 @@
 }
 
 .signup-subtitle {
+  margin-top: 0%;
   font-family: "nunito", sans-serif;
   font-size: 1rem;
   margin-bottom: 2rem;
@@ -46,7 +47,7 @@
 .signup-btn {
   max-width: 150px;
 
-  margin-top: 1rem;
+  margin-top: 0rem;
   padding: 0.5rem 1.5rem;
   background-color: #5b7b44;
   color: #fcf9ee;
