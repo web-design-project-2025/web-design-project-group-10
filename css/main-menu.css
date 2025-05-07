@@ -208,3 +208,46 @@ button {
   font-weight: 500;
   margin-top: 0.5rem;
 }
+
+/* Outro section */
+
+.outro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.outro-text {
+  flex: 1;
+}
+
+.outro-text .tagline {
+  font-size: 2rem;
+  color: #d94f30;
+}
+
+.outro-text .tagline span {
+  display: block;
+}
+
+.outro-text .description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #28396c;
+  max-width: 500px;
+}
+
+.outro-text .subtext {
+  color: #5b7b44;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/* Ramen image */
+.outro-image img {
+  width: 540px;
+  height: auto;
+}
