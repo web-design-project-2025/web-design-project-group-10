@@ -14,6 +14,7 @@
 }
 
 .login-subtitle {
+  margin-top: 0%;
   font-family: "nunito", sans-serif;
   font-weight: 100;
   font-size: 1rem;
@@ -42,7 +43,6 @@
 
 .login-btn {
   max-width: 150px;
-
   padding: 0.5rem 1.5rem;
   background-color: #5b7b44;
   color: #fcf9ee;

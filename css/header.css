@@ -4,6 +4,11 @@ header {
   font-weight: 700;
   font-style: normal;
   background-color: #fcf9ee;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(219, 209, 202, 0.5);
+  z-index: 1000;
 }
 
 .navbar {
