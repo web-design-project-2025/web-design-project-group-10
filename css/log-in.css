@@ -10,13 +10,15 @@
   font-size: 2rem;
   color: #cb4325;
   letter-spacing: 2px;
+  margin-bottom: 0;
 }
 
 .login-subtitle {
   margin-top: 0%;
   font-family: "nunito", sans-serif;
   font-size: 1rem;
-  margin-bottom: 2rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
   color: #28396c;
 }
 
