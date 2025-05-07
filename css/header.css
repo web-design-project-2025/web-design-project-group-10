@@ -6,8 +6,9 @@ header {
   background-color: #fcf9ee;
   position: fixed;
   width: 100vw;
-  top: -2px;
-  box-shadow: 0px 2px 5px #dbd1ca;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(219, 209, 202, 0.5);
+  z-index: 1000;
 }
 
 .navbar {
