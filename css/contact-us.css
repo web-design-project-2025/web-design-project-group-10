@@ -1,4 +1,4 @@
-.login-container {
+.contact-container {
   max-width: 500px;
   margin: 5rem auto;
   text-align: center;
@@ -6,23 +6,23 @@
   color: #fcf9ee;
 }
 
-.login-title {
+.contact-title {
   font-size: 2rem;
   color: #cb4325;
   letter-spacing: 2px;
   margin-bottom: 0;
 }
 
-.login-subtitle {
+.contact-subtitle {
   font-family: "nunito", sans-serif;
-  font-weight: 100;
   font-size: 1rem;
+  font-weight: 100;
   margin-top: 0;
   margin-bottom: 1.5rem;
   color: #28396c;
 }
 
-#login-form {
+#contact-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -30,7 +30,7 @@
   align-items: stretch;
 }
 
-#login-form input {
+#contact-form input {
   width: 100%;
   padding: 0.75rem;
   background-color: #fcf9ee;
@@ -40,7 +40,13 @@
   font-family: "nunito", sans-serif;
 }
 
-.login-btn {
+.button-wrapper {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.contact-btn {
   max-width: 150px;
   padding: 0.5rem 1.5rem;
   background-color: #5b7b44;
@@ -52,29 +58,6 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.login-btn:hover {
+.contact-btn:hover {
   background-color: #4e6535;
-}
-
-@media (max-width: 600px) {
-  .login-container {
-    margin: 3rem auto;
-  }
-  .login-title {
-    font-size: 1.5rem;
-  }
-
-  .login-subtitle {
-    font-size: 0.95rem;
-  }
-
-  #login-form input {
-    font-size: 0.95rem;
-    padding: 0.65rem;
-  }
-
-  .login-btn {
-    width: 100%;
-    max-width: 100px;
-  }
 }

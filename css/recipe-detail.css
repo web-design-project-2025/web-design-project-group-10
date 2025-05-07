@@ -4,11 +4,8 @@
   padding: 0;
 }
 body {
-  font-family: "nunito", sans-serif;
-  font-weight: 400;
   background-color: #fcf9ee;
   color: #28396c;
-  line-height: 1.6;
 }
 
 /* Hero */
@@ -170,7 +167,6 @@ body {
 
 #nutrition-content {
   margin-top: 10px;
-  line-height: 1.5;
 }
 
 .hidden {
