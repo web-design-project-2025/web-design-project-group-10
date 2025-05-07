@@ -114,85 +114,68 @@ button {
   margin-top: 0.5rem;
 }
 
-/* Carousel Layout */
-.recipes-carousel {
+.carousel-container {
+  max-width: 1500px;
+  margin: 0 auto 80px;
+  padding: 20px 20px 20px 20px;
+  padding: 20px;
   display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-top: 2rem;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 1rem;
-}
-
-.recipe-card {
-  background-color: fcf9ee;
-  border: 3px solid #e0a800;
-  border-radius: 12px;
-  width: 240px;
-  flex-shrink: 0;
-  padding: 1rem;
-  box-shadow: 4px 4px 10px #dbd1ca;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  position: relative;
+  gap: px;
 }
 
-.card-header {
-  width: 100%;
+.carousel {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track-wrapper {
+  overflow: hidden;
+}
+
+.carousel-track {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
+  transition: transform 0.5s ease;
+  gap: 20px;
 }
 
-.rating {
-  font-weight: bold;
-  color: #28396c;
-}
-
-.favourite,
-.favorite {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #d94f30;
-}
-
-.recipe-card img {
-  width: auto;
-  height: 10rem;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 0.5rem 0;
-}
-
-.recipe-card h3 {
-  font-size: 1.1rem;
-  color: #28396c;
-  margin: 0.5rem 0;
-}
-
-.card-meta {
-  font-size: 0.9rem;
-  color: #28396c;
-  margin-bottom: 1rem;
-}
-
-.see-more {
-  background-color: #5b7b44;
-  color: #fcf9ee;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.95rem;
-}
-.see-more:hover {
+.carousel-btn {
   background-color: #fcf9ee;
-  border: 2px solid #5b7b44;
+  border: 2px solid #e0a800;
+  border-radius: 30%;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 40px;
   color: #5b7b44;
+  z-index: 1000;
+  flex-shrink: 0;
 }
 
+.carousel-btn.left {
+  margin-right: 10px;
+}
+
+.carousel-btn.right {
+  margin-left: 10px;
+}
+
+.carousel .recipe-card {
+  flex: 0 0 calc(33.33% - 20px);
+}
+
+@media (max-width: 800px) {
+  .carousel-track .recipe-card {
+    flex: 0 0 calc(50% - 14px);
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-track .recipe-card {
+    flex: 0 0 calc(100% - 14px);
+  }
+}
 /* Best Rated Recipes Section */
 .top-rated-recipes {
   margin-top: 4rem;
