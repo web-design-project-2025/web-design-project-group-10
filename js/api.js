@@ -2,8 +2,11 @@ let matchaData = [];
 const matchaContainer = document.getElementById("matcha-container");
 
 async function loadMatcha() {
-  const response = await fetch(
+  /*const response = await fetch(
     "https://en.wikipedia.org/api/rest_v1/page/summary/Matcha"
+  );*/
+  const response = await fetch(
+    "https://en.wikipedia.org/api/rest_v1/page/summary/Category:Japanese_tea"
   );
   const data = await response.json();
   matchaData = data;
@@ -33,6 +36,7 @@ function createMatchaElement(data) {
 function renderMatcha() {
   matchaContainer.innerHTML = "";
 
+  console.log(matchaData);
   const card = createMatchaElement(matchaData);
   matchaContainer.appendChild(card);
 }
