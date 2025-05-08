@@ -133,3 +133,42 @@ if (document.getElementById("login-form")) {
     showSignedInMessage(form.parentElement, user.firstName);
   }
 }
+
+//Contact page
+if (document.getElementById("contact-form")) {
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const firstName = document.getElementById("name").value.trim();
+    const lastName = document.getElementById("surname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    let errors = [];
+    if (!firstName) {
+      errors.push("Please enter your first name.");
+    }
+    if (!lastName) {
+      errors.push("Please enter your last name.");
+    }
+    if (!validateEmail(email)) {
+      errors.push("Please enter a valid email adress.");
+    }
+    if (!message) {
+      errors.push("Please enter your message.");
+    }
+
+    if (errors.length > 0) {
+      showMessage(form, errors.join(" "), true);
+      return;
+    }
+
+    const submissions = JSON.parse(
+      localStorage.getItem("contactSubmissions") || "[]"
+    );
+    submissions.push({ firstName, lastName, email, message });
+    localStorage.setItem("contactSubmissions", JSON.stringify(submissions));
+    showMessage(form, "Message sent successfully! Thank you!", false);
+    form.reset();
+  });
+}
