@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #fcf9ee;
   color: #28396c;
+  margin-top: 60px;
 }
 
 .clock {
@@ -27,7 +28,7 @@ main h5 {
   font-style: normal;
   font-size: 24px;
 }
-main p {
+.text {
   font-family: "nunito", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -57,13 +58,16 @@ main {
 }
 
 #carousel img {
+  width: 100%;
+  height: auto;
   display: none;
   transition: opacity 1s ease-in-out;
 }
 
 #carousel img.active {
   display: block;
-  z-index: 1;
+  position: relative;
+  z-index: 0;
 }
 
 /* Categories */
@@ -290,5 +294,8 @@ main {
 @media (max-width: 768px) {
   .recipes-list {
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -36,26 +36,46 @@
     <main>
       <section class="categories">
         <h2>CATEGORIES</h2>
-        <p>Filter your preferences</p>
+        <p class="text">Filter your preferences</p>
         <p></p>
-        <div class="categories-list">
-          <div class="category" data-category="Desserts">
+        <div class="categories-list" aria-label="recipe categories">
+          <div
+            class="category"
+            data-category="Desserts"
+            aria-label="dessert recipes"
+          >
             <img src="img/Category-sweets-min.png" alt="Desserts" />
             <h5>DESSERTS</h5>
           </div>
-          <div class="category" data-category="Drinks">
+          <div
+            class="category"
+            data-category="Drinks"
+            aria-label="drink recipes"
+          >
             <img src="img/Category-drinks-min.png" alt="Drinks" id="drinks" />
             <h5>DRINKS</h5>
           </div>
-          <div class="category" data-category="Rice & Bowls">
-            <img src="img/category-rice-min.png" alt="Rice & Bowls" />
+          <div
+            class="category"
+            data-category="Rice & Bowls"
+            aria-label="rice and bowls"
+          >
+            <img src="img/category-rice-min.png" alt="Rice & Bowls recipes" />
             <h5>RICE&BOWLS</h5>
           </div>
-          <div class="category" data-category="Sushi">
+          <div
+            class="category"
+            data-category="Sushi"
+            aria-label="sushi recipes"
+          >
             <img src="img/Category-sushi-min.png" alt="Sushi" />
             <h5>SUSHI</h5>
           </div>
-          <div class="category" data-category="Lunch">
+          <div
+            class="category"
+            data-category="Lunch"
+            aria-label="lunch recipes"
+          >
             <img src="img/category-sallad-min.png" alt="Lunch" />
             <h5>LUNCH</h5>
           </div>
@@ -64,8 +84,12 @@
 
       <section class="recipes">
         <h2>Recipes</h2>
-        <p>Look through our recipes</p>
-        <div class="recipes-list" id="recipes-list">
+        <p class="text">Look through our recipes</p>
+        <div
+          class="recipes-list"
+          id="recipes-list"
+          aria-label="list of all recipes"
+        >
           <!-- Recipe cards will be loaded here -->
         </div>
         <button class="more-recipes">More recipes</button>
