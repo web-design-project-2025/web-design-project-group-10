@@ -40,6 +40,16 @@
   font-family: "nunito", sans-serif;
 }
 
+#contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fcf9ee;
+  font-size: 1rem;
+  border: 2px solid #28396c;
+  border-radius: 4px;
+  font-family: "nunito", sans-serif;
+}
+
 .button-wrapper {
   width: 100%;
   text-align: right;
