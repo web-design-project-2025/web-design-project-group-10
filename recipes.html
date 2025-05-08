@@ -12,12 +12,26 @@
   </head>
   <body>
     <div id="header-place"></div>
-
-    <img
-      src="img/Recipes1header.png"
-      alt="Header Image"
-      class="header-image"
-    /><!--ADD THE CAROUSEL HERE-->
+    <header>
+      <div id="carousel">
+        <img
+          src="img/Recipes1header.png"
+          class="active"
+          aria-label="dark carousel header image of a few decorative plates"
+          alt="header carousel image"
+        />
+        <img
+          src="img/carousel2.png"
+          aria-label="carousel header image of japanese dishes"
+          alt="header carousel image"
+        />
+        <img
+          src="img/carousel3.png"
+          aria-label="dark carousel header image of a few decorative plates"
+          alt="header carousel image"
+        />
+      </div>
+    </header>
 
     <main>
       <section class="categories">
@@ -61,5 +75,6 @@
     <script src="js/components.js"></script>
     <script src="js/filter-recipes.js"></script>
     <script src="js/recipe-detail.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>
