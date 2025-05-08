@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <span>${recipe.rating}</span>
         </div>
         <div class="icon-heart">
-          <img src="img/heart-outline.png" alt="Heart">
+          <img src="img/heart-outline.png" class="heart-icon" id="${recipe.id}" alt="Heart">
         </div>
       </div>
       <div class="recipe-content">
