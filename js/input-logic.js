@@ -99,3 +99,37 @@ if (document.getElementById("signup-form")) {
     showSignedInMessage(form.parentElement, user.firstName);
   }
 }
+
+//Login page
+if (document.getElementById("login-form")) {
+  const form = document.getElementById("login-form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+
+    let errors = [];
+    if (!validateEmail(email)) {
+      errors.push("Please enter a valid email adress");
+    }
+    const user = JSON.parse(localStorage.getItem("user") || "{}");
+    if (user.email !== email || user.password !== password) {
+      errors.push("Invalid email or password.");
+    }
+
+    if (errors.length > 0) {
+      showMessage(form, errors.join(" "), true);
+      return;
+    }
+
+    user.isSignedIn = true;
+    localStorage.setItem("user", JSON.stringify(user));
+    showMessage(form, "Login successful! Welcome back!", false);
+    form.reset();
+  });
+
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
+  if (user.isSignedIn) {
+    showSignedInMessage(form.parentElement, user.firstName);
+  }
+}
