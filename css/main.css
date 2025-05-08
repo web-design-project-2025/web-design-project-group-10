@@ -74,6 +74,9 @@ button {
   font-weight: 100;
 }
 
+.subtext {
+  margin-bottom: 45px;
+}
 .explore-btn {
   background-color: #fcf9ee;
   color: #5b7b44;
@@ -81,8 +84,9 @@ button {
   border-radius: 6px;
   padding: 0.6rem 1.6rem;
   font-size: 1rem;
-  margin-top: 1.5rem;
+  text-decoration: none;
   transition: background 0.3s;
+  text-align: center;
 }
 
 .explore-btn:hover {
