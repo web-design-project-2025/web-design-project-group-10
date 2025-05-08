@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       stepsList.innerHTML = "";
       recipe.steps.forEach((step) => {
         const li = document.createElement("li");
-        li.textContent = ` ${step}`;
+        li.innerHTML = step;
         stepsList.appendChild(li);
       });
 
@@ -54,4 +54,45 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => {
       console.error("Error loading recipe data:", error);
     });
+  const toggleIngredientsBtn = document.getElementById("toggle-ingredients");
+  const ingredientsSection = document.querySelector(".ingredients");
+  const stepsSection = document.querySelector(".steps");
+
+  function handleToggle() {
+    const isIngredientsVisible = ingredientsSection.classList.contains("show");
+
+    if (isIngredientsVisible) {
+      ingredientsSection.classList.remove("show");
+      stepsSection.classList.remove("hide");
+      toggleIngredientsBtn.textContent = "Show Ingredients";
+    } else {
+      ingredientsSection.classList.add("show");
+      stepsSection.classList.add("hide");
+      toggleIngredientsBtn.textContent = "Show Steps";
+    }
+  }
+
+  // Only run toggle logic on small screens
+  if (window.innerWidth <= 820 && toggleIngredientsBtn) {
+    toggleIngredientsBtn.addEventListener("click", handleToggle);
+  }
+
+  function moveIngredientsSection() {
+    var ingredients = document.querySelector(".ingredients");
+    var leftPanel = document.querySelector(".left-panel");
+    var rightPanel = document.querySelector(".right-panel");
+    if (window.innerWidth <= 820) {
+      if (!rightPanel.contains(ingredients)) {
+        // Move it into the right panel
+        rightPanel.appendChild(ingredients);
+      }
+    } else {
+      if (!leftPanel.contains(ingredients)) {
+        // Move it back into the left panel
+        leftPanel.appendChild(ingredients);
+      }
+    }
+  }
+  moveIngredientsSection();
+  window.addEventListener("resize", moveIngredientsSection);
 });

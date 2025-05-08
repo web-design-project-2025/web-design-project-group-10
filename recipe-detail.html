@@ -26,11 +26,11 @@
     <!-- MAIN CONTENT -->
     <main class="recipe-container">
       <section class="left-panel">
-        <div class ="rating">
+        <div class="rating">
           <p>Reviewed by 33 users</p>
-          <img src="img/star-full.png"/>
-        <div class="recipe-rating"></div>
-      </div>
+          <img src="img/star-full.png" />
+          <div class="recipe-rating"></div>
+        </div>
         <!-- Review -->
         <div class="review-box">
           <p class="review-text">
@@ -57,21 +57,26 @@
         <h1 class="recipe-title">Recipe title</h1>
         <p class="recipe-category"></p>
         <p class="responsive-paragraph">
-          A delicious and easy-to-follow recipe perfect for any occasion. This
-          dish combines fresh ingredients with simple techniques to deliver
-          great flavor and satisfying results.
+          <strong>A delicious and easy-to-follow recipe</strong> perfect for any
+          occasion. This dish combines fresh ingredients with simple techniques
+          to deliver great flavor and satisfying results.
         </p>
         <div class="meta-info">
           <img src="img/CLOCK.png" alt="CLOCK" />
           <span class="recipe-time"></span>
-          <p class="portions"">7 portions</p>
+          <p class="portions">7 portions</p>
         </div>
 
-        <!-- STEPS -->
         <div class="nutrition-section">
           <button id="toggle-nutrition">Nutrition Info ▼</button>
           <div id="nutrition-content" class="hidden"></div>
         </div>
+
+        <!-- STEPS -->
+        <div class="ingredients-toggle-container">
+          <button id="toggle-ingredients">Show Ingredients</button>
+        </div>
+
         <section class="steps">
           <h4>Steps</h4>
           <ol class="steps-list"></ol>
