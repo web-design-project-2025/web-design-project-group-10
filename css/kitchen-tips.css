@@ -3,6 +3,10 @@ body {
   background-color: #fcf9ee;
 }
 
+main {
+  margin-top: 104.44px;
+}
+
 main h1 {
   font-family: "moby-monospace", monospace;
   color: #d94f30;
@@ -17,6 +21,16 @@ main h2 {
   font-weight: 400;
   color: #28396c;
   text-align: center;
+}
+
+main p {
+  font-family: "nunito", monospace;
+  font-size: 1.1rem;
+  color: #28396c;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 #quick-tips-card {
@@ -110,11 +124,15 @@ section {
 
 /* LONGER TIPS */
 
+.kitchen-tips-headline {
+  margin-top: 6rem;
+}
+
 #kitchen-tips {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem auto;
+  margin: auto;
   padding: 0 1rem;
   max-width: 1400px;
 }
@@ -145,6 +163,9 @@ section {
 
 .kitchen-tip-card figure {
   margin: 0;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
 }
 
 .kitchen-tip-card h1 {
@@ -165,8 +186,10 @@ section {
 
 .icon-arrow-down {
   width: 2rem;
-  align-self: flex-end;
+  justify-self: end;
   cursor: pointer;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 /* ANIMATIONS */
@@ -206,7 +229,7 @@ section {
 
 /* RESPONSIVENESS */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   #quick-tips-card {
     flex-direction: column;
     align-items: center;
