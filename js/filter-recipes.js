@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <span>${recipe.rating}</span>
             </div>
             <div class="icon-heart">
-              <img src="img/heart-outline.png" class="heart-icon" alt="Heart">
+              <img src="img/heart-outline.png" class="heart-icon" id="${recipe.id}" alt="Heart">
             </div>
           </div>
           <div class="recipe-content">
@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
 
-      // 🔥 FAVORIT-HJÄRTA
       const heartIcon = card.querySelector(".heart-icon");
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
       if (favorites.includes(recipe.id)) {
@@ -89,15 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }
 
-  // Initial load
   displayRecipes(currentRecipes);
 
-  // Load more on button click
   loadMoreBtn.addEventListener("click", () => {
     displayRecipes(currentRecipes);
   });
 
-  // Filter by category
   categoryButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const selectedCategory = button.getAttribute("data-category");
@@ -107,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         return recipe.category === selectedCategory;
       });
-      displayRecipes(currentRecipes, true); // reset = true
+      displayRecipes(currentRecipes, true);
     });
   });
 });
