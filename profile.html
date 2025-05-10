@@ -6,6 +6,7 @@
     <title>Recipes Page</title>
     <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/recipes.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="https://use.typekit.net/mhf1mcv.css" />
@@ -15,18 +16,28 @@
 
     <main>
       <section class="profile-welcome">
-        <img src="" alt="profile image" />
         <h1>HELLO, MARTIN</h1>
-        <button>SIGN OUT</button>
       </section>
 
-      <section class="new-recipes">
-        <h1>NEW RECIPES</h1>
-      </section>
       <section id="favorites-section">
         <h1>FAVOURITES</h1>
         <h2 class="caption">All your favourite recipes. In one place</h2>
         <div id="favorite-recipes-list"></div>
+      </section>
+      <section class="new-recipes">
+        <h2 class="section-title">NEW RECIPES</h2>
+        <p class="section-subtext">Look through our newest recipes</p>
+
+        <div class="carousel-container">
+          <button class="carousel-btn left" id="recent-left">&#8249;</button>
+
+          <div class="carousel" id="recent-carousel">
+            <div class="carousel-track-wrapper">
+              <div class="carousel-track" id="recent-track"></div>
+            </div>
+          </div>
+          <button class="carousel-btn right" id="recent-right">&#8250;</button>
+        </div>
       </section>
     </main>
     <div id="footer-place"></div>
@@ -35,5 +46,6 @@
     <script src="js/components.js"></script>
     <script src="js/favourites.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/main-recipes.js"></script>
   </body>
 </html>
