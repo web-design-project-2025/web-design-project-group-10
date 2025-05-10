@@ -45,7 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createRecipeCard(recipe) {
     const card = document.createElement("div");
+    const favoriteIds = JSON.parse(localStorage.getItem("favorites")) || [];
+    const isFavorite = favoriteIds.includes(recipe.id);
     card.classList.add("recipe-card");
+    let heartSrc;
+
+    if (isFavorite) {
+      heartSrc = "img/heart-full.png";
+    } else {
+      heartSrc = "img/heart-icon.png";
+    }
 
     card.innerHTML = `
     <div class="recipe-image-wrapper">
@@ -57,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <span>${recipe.rating}</span>
       </div>
       <div class="icon-heart">
-        <img src="img/heart-icon.png" class="heart-icon" id="${recipe.id}" alt="Heart">
+        <img src="${heartSrc}" class="heart-icon" id="${recipe.id}" alt="Heart">
       </div>
     </div>
     <div class="recipe-content">
