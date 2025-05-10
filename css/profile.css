@@ -1,21 +1,7 @@
-main {
-  padding-top: 10rem;
-  margin-top: 20rem;
-}
-
-main h1 {
-  font-family: "moby-monospace", monospace;
-  color: #d94f30;
-  font-weight: 300;
-  text-align: center;
-}
-
-.caption {
-  font-family: "nunito", monospace;
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #28396c;
-  text-align: center;
+#profile-welcome {
+  margin-top: 10rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 
 #favorites-section {
