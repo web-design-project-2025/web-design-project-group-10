@@ -1,4 +1,5 @@
 main {
+  padding-top: 10rem;
   margin-top: 20rem;
 }
 
@@ -20,4 +21,13 @@ main h1 {
 #favorites-section {
   padding-top: 2rem;
   text-align: center;
+}
+
+#favorite-recipes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 70px auto;
 }

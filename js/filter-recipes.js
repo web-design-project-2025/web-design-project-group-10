@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
       if (favorites.includes(recipe.id)) {
         heartIcon.src = "img/heart-full.png";
+        console.log(`Removed ${recipeId} from favorites`);
       }
 
       heartIcon.addEventListener("click", function () {
@@ -76,16 +77,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleHeartClick(heartIcon, recipeId) {
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    console.log("Favorites from localStorage: ", favorites);
 
     if (favorites.includes(recipeId)) {
+      // REMOVE from favorites
       favorites = favorites.filter((id) => id !== recipeId);
       heartIcon.src = "img/heart-outline.png";
+      console.log(`Removed ${recipeId} from favorites`);
     } else {
+      // ADD to favorites
       favorites.push(recipeId);
       heartIcon.src = "img/heart-full.png";
+      console.log(`Added ${recipeId} to favorites`);
     }
 
+    // Save updated favorites to localStorage
     localStorage.setItem("favorites", JSON.stringify(favorites));
+    console.log("Updated favorites in localStorage: ", favorites);
   }
 
   displayRecipes(currentRecipes);
