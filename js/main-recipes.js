@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <span>${recipe.rating}</span>
       </div>
       <div class="icon-heart">
-        <img src="img/heart-outline.png" class="heart-icon" id="${recipe.id}" alt="Heart">
+        <img src="img/heart-icon.png" class="heart-icon" id="${recipe.id}" alt="Heart">
       </div>
     </div>
     <div class="recipe-content">
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (favorites.includes(recipeId)) {
       // REMOVE from favorites
       favorites = favorites.filter((id) => id !== recipeId);
-      heartIcon.src = "img/heart-outline.png";
+      heartIcon.src = "img/heart-icon.png";
     } else {
       // ADD to favorites
       favorites.push(recipeId);

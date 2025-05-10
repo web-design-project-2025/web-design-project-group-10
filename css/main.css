@@ -238,3 +238,9 @@ button {
   width: 540px;
   height: auto;
 }
+
+/* HEART ICON */
+#heart-icon {
+  width: 5px;
+  height: auto;
+}

@@ -48,6 +48,29 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
         favouriteContainer.appendChild(card);
+
+        const heartIcon = card.querySelector(".heart-icon");
+        heartIcon.addEventListener("click", function () {
+          handleHeartClick(heartIcon, recipe.id);
+        });
       });
     });
+  function handleHeartClick(heartIcon, recipeId) {
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    if (favorites.includes(recipeId)) {
+      // REMOVE from favorites
+      favorites = favorites.filter((id) => id !== recipeId);
+      heartIcon.src = "img/heart-icon.png";
+    } else {
+      // ADD to favorites
+      favorites.push(recipeId);
+      heartIcon.src = "img/heart-full.png";
+    }
+
+    // Save updated favorites to localStorage
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    //Refreshes page when favourite gets removed from list
+    location.reload();
+  }
 });
