@@ -103,6 +103,9 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("user", JSON.stringify(userData));
       showMessage(form, "Sign-up successful! You are signed in.", false);
       form.reset();
+      // location.href was retrieved from https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+      window.location.href = "profile.html";
+      //End of citation
     });
 
     const user = JSON.parse(localStorage.getItem("user") || "{}");
@@ -140,6 +143,9 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("user", JSON.stringify(user));
       showMessage(form, "Login successful! Welcome back!", false);
       form.reset();
+      // location.href was retrieved from https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+      window.location.href = "profile.html";
+      //End of citation
     });
 
     const user = JSON.parse(localStorage.getItem("user") || "{}");

@@ -1,6 +1,19 @@
-main h1 {
-  font-family: "moby-monospace", monospace;
-  color: #d94f30;
-  font-weight: 300;
+#profile-welcome {
+  margin-top: 10rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+#favorites-section {
+  padding-top: 2rem;
   text-align: center;
+}
+
+#favorite-recipes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 70px auto;
 }
