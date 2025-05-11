@@ -5,6 +5,7 @@ function loadComponent(path, placeholderId) {
       document.getElementById(placeholderId).innerHTML = data;
       if (placeholderId === "header-place") {
         initializeHamburgerMenu();
+        updateHeader();
       }
     });
 }
@@ -17,6 +18,21 @@ function initializeHamburgerMenu() {
     hamburger.addEventListener("click", () => {
       menu.classList.toggle("show");
     });
+  }
+}
+
+function updateHeader() {
+  const loggedInDiv = document.getElementById("logged-in");
+  const loggedOutDiv = document.getElementById("logged-out");
+  const user = JSON.parse(localStorage.getElementById("user") || "{}");
+  const isLoggedIn = user.isSignedIn;
+
+  if (isLoggedIn) {
+    loggedInDiv.style.display = "block";
+    loggedOutDiv.style.display = "none";
+  } else {
+    loggedInDiv.style.display = "none";
+    loggedOutDiv.style.display = "block";
   }
 }
 //loading components
