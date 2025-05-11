@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
           : "",
         !hasNumber ? "Password must include at least one number." : "",
         !hasSpecialChar
-          ? "Password must include at least one spacial character."
+          ? "Password must include at least one special character."
           : "",
       ].filter((error) => error),
     };
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
     div.className = "signed-in-message";
     div.style.color = "green";
     div.style.marginTop = "10px";
-    div.textContent = "Welcome back, ${firstName}! You are already signed in.";
-    container.insterBefore(div, container.querySelector("form"));
+    div.textContent = `Welcome back, ${firstName}! You are already signed in.`;
+    container.insertBefore(div, container.querySelector("form"));
   }
 
   //Sign-up page
@@ -103,9 +103,17 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("user", JSON.stringify(userData));
       showMessage(form, "Sign-up successful! You are signed in.", false);
       form.reset();
-      // location.href was retrieved from https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
-      window.location.href = "profile.html";
-      //End of citation
+      if (typeof updateHeader === "function") {
+        updateHeader();
+        console.log("Header updated after signup");
+      } else {
+        console.error("updateHeader not found");
+      }
+      setTimeout(() => {
+        // location.href was retrieved from https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+        window.location.href = "profile.html";
+        //End of citation
+      }, 100);
     });
 
     const user = JSON.parse(localStorage.getItem("user") || "{}");
@@ -143,9 +151,17 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("user", JSON.stringify(user));
       showMessage(form, "Login successful! Welcome back!", false);
       form.reset();
-      // location.href was retrieved from https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
-      window.location.href = "profile.html";
-      //End of citation
+      if (typeof updateHeader === "function") {
+        updateHeader();
+        console.log("Header updated after login");
+      } else {
+        console.error("updateHeader not found");
+      }
+      setTimeout(() => {
+        // location.href was retrieved from https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+        window.location.href = "index.html";
+        //End of citation
+      }, 100);
     });
 
     const user = JSON.parse(localStorage.getItem("user") || "{}");
@@ -159,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Contact form detected");
     const form = document.getElementById("contact-form");
     form.addEventListener("submit", (e) => {
-      console.log("Contact form submitted");
+      console.log("Contact form submitted!");
       e.preventDefault();
       const firstName = document.getElementById("name").value.trim();
       const lastName = document.getElementById("surname").value.trim();
@@ -174,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
         errors.push("Please enter your last name.");
       }
       if (!validateEmail(email)) {
-        errors.push("Please enter a valid email adress.");
+        errors.push("Please enter a valid email address.");
       }
       if (!message) {
         errors.push("Please enter your message.");

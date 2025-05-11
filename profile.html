@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipes Page</title>
+    <title>Profile Page</title>
     <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/recipes.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -15,7 +15,10 @@
     <div id="header-place"></div>
 
     <main>
-      <section id="profile-welcome"></section>
+      <section id="profile-welcome">
+        <h1 id="user-name">HELLO, GUEST</h1>
+        <button id="sign-out-btn">Sign out</button>
+      </section>
 
       <section id="favorites-section">
         <h2 class="section-title">FAVORITES</h2>
@@ -40,7 +43,6 @@
     </main>
     <div id="footer-place"></div>
 
-    <script src="js/hamburger.js"></script>
     <script src="js/components.js"></script>
     <script src="js/favourites.js"></script>
     <script src="js/carousel.js"></script>
