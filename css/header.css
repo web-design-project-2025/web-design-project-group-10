@@ -113,6 +113,14 @@
   justify-content: center;
 }
 
+.user-icon img {
+  width: 32px;
+  height: 32px;
+  fill: #476038;
+  vertical-align: middle;
+  transition: opacity 0.3s;
+}
+
 /* responsiveness */
 @media (max-width: 990px) {
   .menu-container {
@@ -142,14 +150,16 @@
     margin: 0.2rem 0;
   }
 
-  .log-buttons {
+  .log-buttons,
+  .logged-in {
     flex-direction: column;
     width: 100%;
     margin-top: 1.2rem;
     align-items: center;
   }
 
-  .log-buttons button {
+  .log-buttons a,
+  .logged-in a {
     width: 70%;
     text-align: center;
   }

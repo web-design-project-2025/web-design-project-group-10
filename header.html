@@ -8,12 +8,18 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="recipes.html">Recipes</a></li>
         <li><a href="kitchen-tips.html">Kitchen Tips</a></li>
-
-        <li><a href="#">Contact </a></li>
+        <li><a href="contact-us.html">Contact </a></li>
       </ul>
-      <div class="log-buttons">
-        <a href="log-in.html" class="login">Log in</a>
-        <a href="sign-up.html" class="signup">Sign Up</a>
+      <div id="auth-state">
+        <div class="log-buttons" id="logged-out">
+          <a href="log-in.html" class="login">Log in</a>
+          <a href="sign-up.html" class="signup">Sign Up</a>
+        </div>
+        <div class="logged-in" id="logged-in">
+          <a href="profile.html" class="user-icon">
+            <img src="img/user.svg" alt="User Profile" width="32" height="32" />
+          </a>
+        </div>
       </div>
     </div>
 
