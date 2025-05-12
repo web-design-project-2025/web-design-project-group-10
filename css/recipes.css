@@ -77,18 +77,19 @@ main {
 }
 
 .categories-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
   max-width: 1400px;
-  margin: 50px auto 40px;
-  padding: 20px 0;
+  padding: 20px;
+  margin-top: 70px;
 }
 
 .category {
   width: 100%;
   height: auto;
-  max-width: 165px;
+  max-width: 150px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -100,7 +101,7 @@ main {
 .category img {
   width: 100%;
   height: auto;
-  max-width: 180px;
+  max-width: 165px;
   object-fit: cover;
 }
 .category img:hover {
@@ -109,27 +110,23 @@ main {
 #drinks {
   width: 192px;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1190px) {
   .categories-list {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
-    padding: 20px;
+    flex-wrap: nowrap;
+    gap: 70px;
+    padding: 10px;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
   }
 
   .category {
     flex: 0 0 auto;
-  }
-
-  .category img {
-    width: 150px;
-    height: auto;
-  }
-  #drinks {
-    width: 155px;
+    scroll-snap-align: start;
   }
 }
+
 /* Recipes */
 .recipes {
   text-align: center;
