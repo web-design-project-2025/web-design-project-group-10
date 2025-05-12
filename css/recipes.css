@@ -79,7 +79,7 @@ main {
 .categories-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-  gap: 110px;
+  gap: 50px;
   max-width: 1400px;
   margin: 50px auto 40px;
   padding: 20px 0;
@@ -88,7 +88,7 @@ main {
 .category {
   width: 100%;
   height: auto;
-  max-width: 185px;
+  max-width: 165px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -100,7 +100,7 @@ main {
 .category img {
   width: 100%;
   height: auto;
-  max-width: 200px;
+  max-width: 180px;
   object-fit: cover;
 }
 .category img:hover {
@@ -151,7 +151,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 326px;
-  height: 442px;
+  height: 432px;
   box-shadow: 4px 4px 10px #dbd1ca;
   border: 3px solid #e0a800;
   opacity: 0;
@@ -169,7 +169,6 @@ main {
   position: relative;
   overflow: hidden;
   object-fit: cover;
-  border-bottom: 3px solid #e0a800;
 }
 
 .big-image {
@@ -179,7 +178,14 @@ main {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-.big-image:hover {
+.big-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.big-image:hover img {
   transform: scale(1.1);
 }
 
@@ -236,7 +242,7 @@ main {
   font-weight: 550;
   color: #28396c;
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   margin-top: 15px;
 }
 
@@ -255,7 +261,7 @@ main {
   color: #28396c;
   font-family: "nunito", sans-serif;
   font-weight: 500;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
 }
 
 .recipe-time img {
@@ -273,7 +279,7 @@ main {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 10px 0 10px;
+  margin: 0px 0 10px;
 }
 
 .see-more-button:hover {

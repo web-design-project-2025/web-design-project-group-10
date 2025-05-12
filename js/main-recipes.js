@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="recipe-content">
       <h3 class="recipe-title">${recipe.title}</h3>
       <div class="recipe-details">
-        <img src="img/leaf.png" alt="Leaf" class="leaf-icon">
         <div class="recipe-time">
           <svg xmlns="http://www.w3.org/2000/svg" class="clock" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10" />
