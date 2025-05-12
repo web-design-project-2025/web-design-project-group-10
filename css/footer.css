@@ -17,6 +17,7 @@ footer {
   gap: 2rem;
   max-width: 1400px;
   margin: 0 auto;
+  margin-left: 10vw;
 }
 
 .footer-section {

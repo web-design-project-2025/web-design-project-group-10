@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       card.innerHTML = `
           <div class="recipe-image-wrapper">
-            <div class="big-image">
-              <img src="${recipe.image}" alt="${recipe.title}">
-            </div>
+            <a href="recipe-detail.html?id=${recipe.id}" class="big-image">
+             <img src="${recipe.image}" alt="${recipe.title}">
+           </a>
             <div class="icon-star">
               <img src="img/star-full.png" alt="Star">
               <span>${recipe.rating}</span>
@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="recipe-content">
             <h3 class="recipe-title">${recipe.title}</h3>
             <div class="recipe-details">
-              <img src="img/leaf.png" alt="Leaf" class="leaf-icon">
               <div class="recipe-time">
                 <svg xmlns="http://www.w3.org/2000/svg" class="clock" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2">
                   <circle cx="12" cy="12" r="10" />
