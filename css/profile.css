@@ -1,10 +1,17 @@
+#log-out-section {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: end;
+}
+
 #profile-welcome {
-  margin-top: 10rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 #favorites-section {
+  display: none;
   padding-top: 2rem;
   text-align: center;
 }
@@ -16,4 +23,32 @@
   justify-content: center;
   max-width: 1400px;
   margin: 70px auto;
+}
+
+#profile-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#profile-nav button {
+  font-family: "nunito", sans-serif;
+  padding: 7px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #ffffff;
+  background-color: #5a764b;
+  border: 2px solid #5a764b;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+#profile-nav button:hover {
+  background-color: transparent;
+  color: #5a764b;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
