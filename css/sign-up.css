@@ -16,8 +16,8 @@
 
 .signup-subtitle {
   font-family: "nunito", sans-serif;
-  font-weight: 100;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 1.5rem;
   color: #28396c;
@@ -41,6 +41,13 @@
   font-family: "nunito", sans-serif;
 }
 
+#signup-form p {
+  color: #9d9d9d;
+  font-family: "nunito", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+}
 .button-wrapper {
   width: 100%;
   text-align: right;
@@ -54,11 +61,13 @@
   color: #fcf9ee;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 600;
   font-family: "nunito", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .signup-btn:hover {
   background-color: #4e6535;
 }

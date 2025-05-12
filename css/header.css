@@ -41,6 +41,7 @@
   text-decoration: none;
   color: #d94f30;
   font-weight: 600;
+  font-size: 18px;
 }
 .nav-links a:hover {
   color: #aa3a20;
@@ -55,7 +56,7 @@
 .login {
   font-family: "nunito", sans-serif;
   padding: 7px 19px;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -75,7 +76,7 @@
 .signup {
   font-family: "nunito", sans-serif;
   padding: 7px 14px;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -115,8 +116,8 @@
 }
 
 .user-icon img {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   vertical-align: middle;
   transition: opacity 0.3s;
 }
