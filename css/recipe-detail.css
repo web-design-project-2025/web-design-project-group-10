@@ -64,6 +64,7 @@ body {
 }
 .rating {
   display: flex;
+  margin-top: 20px;
 }
 .rating p {
   font-size: 18px;
@@ -75,54 +76,6 @@ body {
   height: 28px;
 }
 
-/* Review box */
-.review-box {
-  background-color: #fcf9ee;
-  padding: 20px;
-  border: 3px solid #e9a6a6;
-  box-shadow: 4px 4px 10px #dbd1ca;
-  border-radius: 12px;
-}
-
-.review-text {
-  font-style: italic;
-  font-family: "nunito", sans-serif;
-  font-weight: 400;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.review-meta {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.review-meta img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #ccc;
-}
-
-.reviewer {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.location {
-  font-size: 14px;
-  color: #bbc7c9;
-  font-weight: 400;
-}
-.rating {
-  margin-top: 10px;
-  font-weight: bold;
-}
-.likes {
-  color: #d94f30;
-  margin-left: 60px;
-}
 /* Ingredients */
 .ingredients h2 {
   font-size: 24px;
@@ -133,6 +86,7 @@ body {
 }
 
 .ingredients-list {
+  margin-top: 20px;
   list-style: none;
   padding-left: 0;
 }
@@ -140,7 +94,12 @@ body {
 .ingredients-list li {
   display: flex;
   align-items: center;
+  margin-top: 10px;
+
   margin-bottom: 10px;
+  font-size: 18px;
+  color: #5b7b44;
+  font-weight: 500;
 }
 
 .ingredients-list input[type="checkbox"] {
@@ -156,7 +115,7 @@ body {
   font-size: 1em;
   color: #28396c;
   cursor: pointer;
-  padding: 8px 200px 8px 10px;
+  padding: 8px 100px 8px 10px;
   text-align: left;
   border-radius: 20px;
 }
@@ -219,6 +178,7 @@ body {
   color: #28396c;
   border-right: 2px solid #28396c;
   padding-right: 10px;
+  margin: 0;
 }
 .portions {
   font-size: 18px;
