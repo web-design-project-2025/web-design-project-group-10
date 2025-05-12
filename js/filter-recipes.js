@@ -30,33 +30,42 @@ document.addEventListener("DOMContentLoaded", () => {
       card.classList.add("recipe-card");
 
       card.innerHTML = `
-        <div class="recipe-image-wrapper">
-          <div class="big-image">
-            <img src="${recipe.image}" alt="${recipe.title}">
-          </div>
-          <div class="icon-star">
-            <img src="img/star-full.png" alt="Star">
-            <span>${recipe.rating}</span>
-          </div>
-          <div class="icon-heart">
-            <img src="img/heart-outline.png" alt="Heart">
-          </div>
-        </div>
-        <div class="recipe-content">
-          <h3 class="recipe-title">${recipe.title}</h3>
-          <div class="recipe-details">
-            <img src="img/leaf.png" alt="Leaf" class="leaf-icon">
-            <div class="recipe-time">
-              <svg xmlns="http://www.w3.org/2000/svg" class="clock" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-              <span>${recipe.prepTime}</span>
+          <div class="recipe-image-wrapper">
+            <a href="recipe-detail.html?id=${recipe.id}" class="big-image">
+             <img src="${recipe.image}" alt="${recipe.title}">
+           </a>
+            <div class="icon-star">
+              <img src="img/star-full.png" alt="Star">
+              <span>${recipe.rating}</span>
+            </div>
+            <div class="icon-heart">
+              <img src="img/heart-icon.png" class="heart-icon" id="${recipe.id}" alt="Heart">
             </div>
           </div>
-          <button class="see-more-button" onclick="location.href='recipe-detail.html?id=${recipe.id}'">See more</button>
-        </div>
-      `;
+          <div class="recipe-content">
+            <h3 class="recipe-title">${recipe.title}</h3>
+            <div class="recipe-details">
+              <div class="recipe-time">
+                <svg xmlns="http://www.w3.org/2000/svg" class="clock" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>${recipe.prepTime}</span>
+              </div>
+            </div>
+            <button class="see-more-button" onclick="location.href='recipe-detail.html?id=${recipe.id}'">See more</button>
+          </div>
+        `;
+
+      const heartIcon = card.querySelector(".heart-icon");
+      const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+      if (favorites.includes(recipe.id)) {
+        heartIcon.src = "img/heart-full.png";
+      }
+
+      heartIcon.addEventListener("click", function () {
+        handleHeartClick(heartIcon, recipe.id);
+      });
 
       recipeContainer.appendChild(card);
     });
@@ -64,15 +73,32 @@ document.addEventListener("DOMContentLoaded", () => {
     currentIndex = nextIndex;
   }
 
-  // Initial load
+  function handleHeartClick(heartIcon, recipeId) {
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    console.log("Favorites from localStorage: ", favorites);
+
+    if (favorites.includes(recipeId)) {
+      // REMOVE from favorites
+      favorites = favorites.filter((id) => id !== recipeId);
+      heartIcon.src = "img/heart-outline.png";
+    } else {
+      // ADD to favorites
+      favorites.push(recipeId);
+      heartIcon.src = "img/heart-full.png";
+      console.log(`Added ${recipeId} to favorites`);
+    }
+
+    // Save updated favorites to localStorage
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    console.log("Updated favorites in localStorage: ", favorites);
+  }
+
   displayRecipes(currentRecipes);
 
-  // Load more on button click
   loadMoreBtn.addEventListener("click", () => {
     displayRecipes(currentRecipes);
   });
 
-  // Filter by category
   categoryButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const selectedCategory = button.getAttribute("data-category");
@@ -82,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         return recipe.category === selectedCategory;
       });
-      displayRecipes(currentRecipes, true); // reset = true
+      displayRecipes(currentRecipes, true);
     });
   });
 });

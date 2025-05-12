@@ -52,5 +52,113 @@
     "title": "CITRUS ZEST",
     "icon": "🍋",
     "tip": "Zest before you juice – way easier and more flavorful!"
+  },
+  {
+    "id": 10,
+    "title": "SAKE",
+    "icon": "🍶",
+    "tip": "Use sake to tenderize meats or add depth to soups."
+  },
+  {
+    "id": 11,
+    "title": "SOY SAUCE",
+    "icon": "🥢",
+    "tip": "Opt for low-sodium soy sauce for a subtle saltiness in delicate dishes."
+  },
+  {
+    "id": 12,
+    "title": "MIRIN",
+    "icon": "🍶",
+    "tip": "Splash in mirin at the end of cooking for a subtle sweetness and gloss."
+  },
+  {
+    "id": 13,
+    "title": "DAISHI",
+    "icon": "🍲",
+    "tip": "Simmer kombu and bonito flakes to quickly whip up an umami-rich dashi."
+  },
+  {
+    "id": 14,
+    "title": "KOMBU",
+    "icon": "🌿",
+    "tip": "Wipe kombu gently before steeping; it enhances the dashi without bitterness."
+  },
+  {
+    "id": 15,
+    "title": "BONITO FLOKES",
+    "icon": "🐟",
+    "tip": "Sprinkle bonito flakes over hot dishes for a savory, smoky boost."
+  },
+  {
+    "id": 16,
+    "title": "NORI",
+    "icon": "🌊",
+    "tip": "Crisp up nori in a dry pan for an extra crunchy texture in your rice."
+  },
+  {
+    "id": 17,
+    "title": "UMAMI BOOST",
+    "icon": "🍄",
+    "tip": "Layer mushrooms and seaweed in soups and sauces for deep umami."
+  },
+  {
+    "id": 18,
+    "title": "TEMPURA TECHNIQUE",
+    "icon": "🍤",
+    "tip": "Double-fry tempura for a light, super-crispy crunch."
+  },
+  {
+    "id": 19,
+    "title": "PICKLED GINGER",
+    "icon": "🥒",
+    "tip": "Serve pickled ginger as a palate cleanser after spicy dishes."
+  },
+  {
+    "id": 20,
+    "title": "DAIKON RADISH",
+    "icon": "🥕",
+    "tip": "Grate fresh daikon over noodles for a cool, crisp bite."
+  },
+  {
+    "id": 21,
+    "title": "SCALLIONS",
+    "icon": "🧅",
+    "tip": "Finely chop scallions to sprinkle over miso soup for brightness."
+  },
+  {
+    "id": 22,
+    "title": "TOASTED SESAME SEEDS",
+    "icon": "🌰",
+    "tip": "Lightly toast sesame seeds to add texture and a nutty aroma to your dish."
+  },
+  {
+    "id": 23,
+    "title": "YUZU",
+    "icon": "🍊",
+    "tip": "A few drops of yuzu juice can brighten sauces and dips like nothing else."
+  },
+  {
+    "id": 24,
+    "title": "SHISO LEAVES",
+    "icon": "🍃",
+    "tip": "Garnish with shiso leaves for a unique, refreshing herbal note."
+  },
+  {
+    "id": 25,
+    "title": "CHILI OIL",
+    "icon": "🌶️",
+    "tip": "A drizzle of chili oil over ramen adds both spice and aroma."
+  },
+  {
+    "id": 26,
+    "title": "SWEET POTATO",
+    "icon": "🍠",
+    "tip": "Roast sweet potatoes and mash them for a naturally sweet tempura dip."
+  },
+  {
+    "id": 27,
+    "title": "MATCHA",
+    "icon": "🍵",
+    "tip": "Experiment with matcha in savory marinades for an unexpected flavor twist."
   }
 ]

@@ -14,19 +14,19 @@ async function loadQuickTips() {
   leftCard.innerHTML = `
   <h1>${selected[0].title}</h1>
   <h3>${selected[0].icon}</h3>
-  <h2>${selected[0].tip}</h2>
+  <p>${selected[0].tip}</h2>
 `;
 
   centerCard.innerHTML = `
   <h1>${selected[1].title}</h1>
   <h3>${selected[1].icon}</h3>
-  <h2>${selected[1].tip}</h2>
+  <p>${selected[1].tip}</h2>
 `;
 
   rightCard.innerHTML = `
   <h1>${selected[2].title}</h1>
   <h3>${selected[2].icon}</h3>
-  <h2>${selected[2].tip}</h2>
+  <p>${selected[2].tip}</h2>
 `;
 }
 
@@ -63,8 +63,8 @@ function createKitchenTipElement(tip) {
     <img src="${tip.img}" alt="${tip.title}" class="tip-image" />
     <figure>
       <h1>${tip.title}</h1>
-      <h2>${tip.tip}</h2>
-      <h2 class="tip-2" style="display: none;">${tip.tip2}</h2>
+      <p>${tip.tip}</p>
+      <p class="tip-2" style="display: none;">${tip.tip2}</p>
           <img src="img/icon-arrow-down.svg" alt="arrow down" class="icon-arrow-down" />
 
     </figure>

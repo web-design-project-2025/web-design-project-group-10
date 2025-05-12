@@ -17,35 +17,12 @@
     <!-- HERO SECTION -->
     <header class="hero">
       <div class="hero-image"></div>
-      <div class="icon-buttons">
-        <img id="icon" src="img/share-icon.png" alt="Share icon" />
-        <img id="icon" src="img/heart-icon.png" alt="like icon" />
-      </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main class="recipe-container">
       <section class="left-panel">
-        <div class ="rating">
-          <p>Reviewed by 33 users</p>
-          <img src="img/star-full.png"/>
-        <div class="recipe-rating"></div>
-      </div>
         <!-- Review -->
-        <div class="review-box">
-          <p class="review-text">
-            “This recipe is really good, but I took it up a notch the second
-            time I made it by adding a little bit of oil to the base!”
-          </p>
-          <div class="review-meta">
-            <img src="img/user-avatar.png" alt="User avatar" />
-            <div>
-              <p class="reviewer">Martin Ivanovic</p>
-              <p class="location">Jönköping, Sweden</p>
-            </div>
-            <div class="likes">❤ 251</div>
-          </div>
-        </div>
 
         <section class="ingredients">
           <h2>INGREDIENTS</h2>
@@ -54,24 +31,37 @@
       </section>
 
       <section class="right-panel">
-        <h1 class="recipe-title">Recipe title</h1>
+        <div class="top-section">
+          <h1 class="recipe-title">Recipe title</h1>
+
+          <img id="icon" src="img/heart-empty-outline.png" alt="like icon" />
+        </div>
+        <div class="rating">
+          <p>Reviewed by 33 users</p>
+          <img src="img/star-full.png" />
+          <div class="recipe-rating"></div>
+        </div>
         <p class="recipe-category"></p>
         <p class="responsive-paragraph">
-          A delicious and easy-to-follow recipe perfect for any occasion. This
-          dish combines fresh ingredients with simple techniques to deliver
-          great flavor and satisfying results.
+          <strong>A delicious and easy-to-follow recipe</strong> perfect for any
+          occasion. This dish combines fresh ingredients with simple techniques
+          to deliver great flavor and satisfying results.
         </p>
-        <div class="meta-info">
-          <img src="img/CLOCK.png" alt="CLOCK" />
-          <span class="recipe-time"></span>
-          <p class="portions"">7 portions</p>
-        </div>
-
-        <!-- STEPS -->
         <div class="nutrition-section">
           <button id="toggle-nutrition">Nutrition Info ▼</button>
           <div id="nutrition-content" class="hidden"></div>
         </div>
+        <div class="meta-info">
+          <img src="img/CLOCK.png" alt="CLOCK" />
+          <span class="recipe-time"></span>
+          <p class="portions">7 portions</p>
+        </div>
+
+        <!-- STEPS -->
+        <div class="ingredients-toggle-container">
+          <button id="toggle-ingredients">Show Ingredients</button>
+        </div>
+
         <section class="steps">
           <h4>Steps</h4>
           <ol class="steps-list"></ol>

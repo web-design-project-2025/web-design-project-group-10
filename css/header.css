@@ -1,4 +1,4 @@
-header {
+.navigation {
   margin: 0;
   font-family: "nunito", sans-serif;
   font-weight: 700;
@@ -8,7 +8,7 @@ header {
   width: 100vw;
   top: 0;
   box-shadow: 0 2px 5px rgba(219, 209, 202, 0.5);
-  z-index: 1000;
+  z-index: 1500;
 }
 
 .navbar {
@@ -41,6 +41,7 @@ header {
   text-decoration: none;
   color: #d94f30;
   font-weight: 600;
+  font-size: 18px;
 }
 .nav-links a:hover {
   color: #aa3a20;
@@ -54,14 +55,15 @@ header {
 
 .login {
   font-family: "nunito", sans-serif;
-  padding: 7px 14px;
-  font-size: 14px;
+  padding: 7px 19px;
+  font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
   background-color: #5a764b;
   color: white;
-  border: none;
+
+  border: 2px solid #5a764b;
 }
 .log-buttons a {
   text-decoration: none;
@@ -74,7 +76,7 @@ header {
 .signup {
   font-family: "nunito", sans-serif;
   padding: 7px 14px;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -113,6 +115,32 @@ header {
   justify-content: center;
 }
 
+.user-icon img {
+  width: 42px;
+  height: 42px;
+  vertical-align: middle;
+  transition: opacity 0.3s;
+}
+
+#sign-out-btn {
+  font-family: "nunito", sans-serif;
+  padding: 7px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #5a764b;
+  border: 2px solid #5a764b;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+#sign-out-btn:hover {
+  background-color: #5a764b;
+  color: white;
+}
+
 /* responsiveness */
 @media (max-width: 990px) {
   .menu-container {
@@ -142,14 +170,16 @@ header {
     margin: 0.2rem 0;
   }
 
-  .log-buttons {
+  .log-buttons,
+  .logged-in {
     flex-direction: column;
     width: 100%;
     margin-top: 1.2rem;
     align-items: center;
   }
 
-  .log-buttons button {
+  .log-buttons a,
+  .logged-in a {
     width: 70%;
     text-align: center;
   }

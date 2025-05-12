@@ -1,5 +1,6 @@
 .login-container {
   max-width: 500px;
+  padding-top: 50px;
   margin: 5rem auto;
   text-align: center;
   font-family: "moby-primo-variable", sans-serif;
@@ -15,8 +16,8 @@
 
 .login-subtitle {
   font-family: "nunito", sans-serif;
-  font-weight: 100;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 1.5rem;
   color: #28396c;
@@ -47,7 +48,8 @@
   color: #fcf9ee;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 600;
   font-family: "nunito", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
