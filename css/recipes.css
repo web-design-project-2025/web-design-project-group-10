@@ -101,7 +101,7 @@ main {
 .category img {
   width: 100%;
   height: auto;
-  max-width: 165px;
+  max-width: 160px;
   object-fit: cover;
 }
 .category img:hover {
