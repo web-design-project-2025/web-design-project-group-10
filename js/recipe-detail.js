@@ -38,7 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const nutritionContent = document.getElementById("nutrition-content");
       recipe.nutrition.forEach((item) => {
         const p = document.createElement("p");
-        p.textContent = `${item.name}: ${item.value}`;
+        const strong = document.createElement("strong");
+        strong.textContent = `${item.name}: `;
+        p.appendChild(strong);
+        p.append(item.value);
         nutritionContent.appendChild(p);
       });
 

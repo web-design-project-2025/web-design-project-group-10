@@ -23,21 +23,17 @@ body {
   background-position: center;
 }
 
-.icon-buttons {
-  position: absolute;
-  bottom: 20px;
-  left: 13vw;
+.top-section {
   display: flex;
-  gap: 15px;
 }
 
 #icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #fcf9ee;
-  border-radius: 20%;
-  border: 3px solid #e0a800;
-  padding: 5px;
+  border-radius: 50%;
   box-shadow: 4px 4px 10px #dbd1ca;
   transition: transform 0.3s ease;
 }
@@ -107,25 +103,25 @@ body {
 }
 /* Nutrition Info */
 .nutrition-section {
-  margin: 10px 0px 20px;
+  padding: 0px;
+  margin: 15px 0 20px 0;
 }
 #toggle-nutrition {
   background-color: transparent;
-  border: 2px solid #5b7b44;
-  font-size: 1em;
-  color: #28396c;
-  cursor: pointer;
-  padding: 8px 100px 8px 10px;
-  text-align: left;
-  border-radius: 20px;
-}
 
-#toggle-nutrition:hover {
-  box-shadow: 4px 4px 10px #dbd1ca;
+  font-size: 1em;
+  color: #5b7b44;
+  cursor: pointer;
+  padding-bottom: 5px;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid #5b7b44;
 }
 
 #nutrition-content {
-  margin: 10px 10px;
+  margin-top: 10px;
+  color: #5b7b44;
+  line-height: 1.6;
 }
 
 .hidden {
