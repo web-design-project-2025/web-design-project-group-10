@@ -172,6 +172,11 @@ button {
   z-index: 1000;
   flex-shrink: 0;
 }
+.recipe-card {
+  width: 326px;
+  height: 432px;
+  flex: 0 0 auto;
+}
 
 .carousel-btn.left {
   margin-right: 10px;
@@ -185,17 +190,36 @@ button {
   flex: 0 0 calc(33.33% - 20px);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1258px) {
   .carousel-track .recipe-card {
-    flex: 0 0 calc(50% - 14px);
+    flex: 0 0 calc(50% - 17px);
+  }
+  .recipe-card {
+    width: 320px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .carousel-track .recipe-card {
-    flex: 0 0 calc(100% - 14px);
+    flex: 0 0 calc(100% - 17px);
+  }
+  .recipe-card {
+    max-height: 300px;
   }
 }
+@media (max-width: 450px) {
+  .carousel-track .recipe-card {
+    flex: 0 0 calc(100% - 17px);
+  }
+  .recipe-card {
+    max-height: 300px;
+    width: 250px;
+  }
+  .carousel-container {
+    width: 350px;
+  }
+}
+
 /* Best Rated Recipes Section */
 .top-rated-recipes {
   margin-top: 4rem;
