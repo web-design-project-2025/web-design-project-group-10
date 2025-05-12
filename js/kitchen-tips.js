@@ -63,7 +63,6 @@ function createKitchenTipElement(tip) {
     <img src="${tip.img}" alt="${tip.title}" class="tip-image" />
     <figure>
       <h1>${tip.title}</h1>
-      <p class="bold">${tip.caption}</p>
       <p>${tip.tip}</p>
       <p class="tip-2" style="display: none;">${tip.tip2}</p>
           <img src="img/icon-arrow-down.svg" alt="arrow down" class="icon-arrow-down" />
