@@ -23,24 +23,48 @@ document.addEventListener("DOMContentLoaded", () => {
       track.appendChild(card);
     });
 
-    const maxIndex = Math.ceil(recipeArray.length / 3) - 1;
+    function getCardsPerView() {
+      const width = window.innerWidth;
+      if (width <= 896) return 1;
+      if (width <= 1258) return 2;
+      return 3;
+    }
 
     function updateCarousel() {
-      const cardWidth = track.querySelector(".recipe-card").offsetWidth + 20;
-      track.style.transform = `translateX(-${index * cardWidth * 3}px)`;
+      const card = track.querySelector(".recipe-card");
+      if (!card) return;
+
+      const cardWidth = card.offsetWidth + 20;
+      const cardsPerView = getCardsPerView();
+      const maxIndex = Math.max(
+        0,
+        Math.ceil(recipeArray.length / cardsPerView) - 1
+      );
+
+      index = Math.min(index, maxIndex);
+      track.style.transform = `translateX(-${
+        index * cardWidth * cardsPerView
+      }px)`;
     }
 
     leftBtn.addEventListener("click", () => {
+      const cardsPerView = getCardsPerView();
       index = Math.max(index - 1, 0);
       updateCarousel();
     });
 
     rightBtn.addEventListener("click", () => {
+      const cardsPerView = getCardsPerView();
+      const maxIndex = Math.max(
+        0,
+        Math.ceil(recipeArray.length / cardsPerView) - 1
+      );
       index = Math.min(index + 1, maxIndex);
       updateCarousel();
     });
 
     window.addEventListener("resize", updateCarousel);
+    updateCarousel();
   }
 
   function createRecipeCard(recipe) {
