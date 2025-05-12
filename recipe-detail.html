@@ -17,10 +17,6 @@
     <!-- HERO SECTION -->
     <header class="hero">
       <div class="hero-image"></div>
-      <div class="icon-buttons">
-        <img id="icon" src="img/share-icon.png" alt="Share icon" />
-        <img id="icon" src="img/heart-icon.png" alt="like icon" />
-      </div>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -35,7 +31,11 @@
       </section>
 
       <section class="right-panel">
-        <h1 class="recipe-title">Recipe title</h1>
+        <div class="top-section">
+          <h1 class="recipe-title">Recipe title</h1>
+
+          <img id="icon" src="img/heart-empty-outline.png" alt="like icon" />
+        </div>
         <div class="rating">
           <p>Reviewed by 33 users</p>
           <img src="img/star-full.png" />
@@ -47,15 +47,14 @@
           occasion. This dish combines fresh ingredients with simple techniques
           to deliver great flavor and satisfying results.
         </p>
+        <div class="nutrition-section">
+          <button id="toggle-nutrition">Nutrition Info ▼</button>
+          <div id="nutrition-content" class="hidden"></div>
+        </div>
         <div class="meta-info">
           <img src="img/CLOCK.png" alt="CLOCK" />
           <span class="recipe-time"></span>
           <p class="portions">7 portions</p>
-        </div>
-
-        <div class="nutrition-section">
-          <button id="toggle-nutrition">Nutrition Info ▼</button>
-          <div id="nutrition-content" class="hidden"></div>
         </div>
 
         <!-- STEPS -->
