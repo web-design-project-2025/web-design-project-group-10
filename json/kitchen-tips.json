@@ -1,26 +1,23 @@
 [
   {
     "id": 1,
-    "img": "img/miso-test-img.jpg",
-    "title": "Don’t Boil Your Miso, Bestie.",
-    "caption": "Miso is the heart of many Japanese dishes, but most people mess it up at the last second.",
-    "tip": "Miso is not just a seasoning — it's a fermented ingredient that’s alive with probiotics, umami compounds, and subtle complexity. When you boil miso, you destroy the living cultures that make it so unique and beneficial. Instead, once your soup or broth has finished cooking, turn off the heat and dissolve the miso in a ladle of warm liquid before mixing it gently back into the pot. This simple step preserves the integrity of the miso and ensures a more balanced, mellow flavor that’s never bitter or flat.",
-    "tip2": "Don’t limit miso to miso soup! Try blending it with butter for savory toast, whisking it into vinaigrettes for salad, or even folding it into mashed potatoes for a game-changing umami punch. Lighter misos like shiro (white) are sweet and mild — great for dressings and glazes — while darker misos like aka (red) bring bold, fermented depth to stews, marinades, or even pasta sauces. Once you start, miso becomes a pantry essential — trust."
+    "img": "img/miso_paste.png",
+    "title": "DON'T BOIL YOUR MISO BESTIE",
+    "tip": "<strong>Miso is the heart of many Japanese dishes</strong>, but most people mess it up at the last second.<br><br><strong>Miso is not just a seasoning</strong> — it's a fermented ingredient that’s alive with probiotics, umami compounds, and subtle complexity. When you boil miso, you destroy the living cultures that make it so unique and beneficial. Instead, once your soup or broth has finished cooking, turn off the heat and dissolve the miso in a ladle of warm liquid before mixing it gently back into the pot.<br><br>This simple step <strong>preserves the integrity of the miso</strong> and ensures a more balanced, mellow flavor that’s never bitter or flat.",
+    "tip2": "Don’t limit miso to miso soup!<br><br><strong>Try blending it with butter</strong> for savory toast, whisking it into vinaigrettes for salad, or even folding it into mashed potatoes for a game-changing umami punch. Lighter misos like <strong>shiro (white)</strong> are sweet and mild — great for dressings and glazes — while darker misos like <strong>aka (red)</strong> bring bold, fermented depth to stews, marinades, or even pasta sauces.<br><br><strong>Once you start, miso becomes a pantry essential — trust.</strong>"
   },
   {
     "id": 2,
-    "img": "img/miso-test-img.jpg",
-    "title": "Crispy Tofu Without Tears",
-    "caption": "Tofu can go from soggy to superstar, all it needs is a little prep magic.",
-    "tip": "If your tofu always ends up sad and soggy, the problem isn’t the pan. It’s the prep. Tofu is full of water, and unless you press that moisture out, you’ll never get that golden crust. Wrap your tofu in paper towels or a clean dishcloth, then weigh it down with something heavy (like a skillet or a stack of books) for at least 15–30 minutes. Once drained, cube it and coat with a thin layer of cornstarch. This is the golden move, it creates a crisp, crackly shell when pan-fried or baked.",
-    "tip2": "For next-level texture with less oil, toss your tofu cubes in a bit of sesame oil and cornstarch, then bake at 200°C (390°F) for 25–30 minutes or throw them in an air fryer for 15 minutes. Crispy outside, tender inside. Tofu that finally earns its place as the main event. Pair it with sticky teriyaki glaze, spicy mayo, or even a miso-honey drizzle and you’ve got a meal that hits every note from crunch to crave."
+    "img": "img/tofu_fried.png",
+    "title": "CRISPY TOFU FOR EVERYONE",
+    "tip": "<strong>Tofu can go from soggy to superstar</strong>, all it needs is a little prep magic.<br><br>If your tofu always ends up sad and soggy, the problem isn’t the pan. It’s the prep. <strong>Tofu is full of water</strong>, and unless you press that moisture out, you’ll never get that golden crust. Wrap your tofu in paper towels or a clean dishcloth, then weigh it down with something heavy (like a skillet or a stack of books) for at least 15–30 minutes.<br><br>Once drained, cube it and coat with a thin layer of <strong>cornstarch</strong>. This is the golden move — it creates a crisp, crackly shell when pan-fried or baked.",
+    "tip2": "For next-level texture with less oil, <strong>toss your tofu cubes in a bit of sesame oil and cornstarch</strong>, then bake at 200°C (390°F) for 25–30 minutes or throw them in an air fryer for 15 minutes.<br><br><strong>Crispy outside, tender inside.</strong> Tofu that finally earns its place as the main event. Pair it with sticky teriyaki glaze, spicy mayo, or even a miso-honey drizzle and you’ve got a meal that hits every note from crunch to crave."
   },
   {
     "id": 3,
-    "img": "img/miso-test-img.jpg",
-    "title": "Fluffier Rice Starts Before the Pot",
-    "caption": "Most rice fails happen before the cooking even begins. Here’s how to fix that.",
-    "tip": "Good rice doesn’t begin with the rice cooker or the stovetop. It starts with rinsing. Japanese short-grain and sushi rice varieties contain a lot of surface starch that can turn your pot into a gluey mess. Place the rice in a bowl and rinse it with cold water, swirling it gently with your hand. Pour off the cloudy water and repeat this 3–5 times until the water runs nearly clear. Want to go pro? Let it soak in clean water for 20–30 minutes before cooking: This helps the grains absorb water evenly and cook through with that signature bouncy texture.",
-    "tip2": "After your rice is cooked, do not fluff it immediately. Let it sit, covered and untouched, for 10–15 minutes to steam in its own heat. This resting period allows the grains to firm up slightly and release excess moisture. Then fluff with a paddle or fork using slicing motions, not stirring. This keeps the grains separate and light. Finish with a splash of seasoned rice vinegar if you’re making sushi, or fold in toasted sesame seeds and furikake for a simple upgrade."
+    "img": "img/octopus_rice.png",
+    "title": "FLUFFIER RICE STARTS BEFORE THE POT",
+    "tip": "<strong>Most rice fails happen before the cooking even begins.</strong> Here’s how to fix that.<br><br>Good rice doesn’t begin with the rice cooker or the stovetop. <strong>It starts with rinsing.</strong> Japanese short-grain and sushi rice varieties contain a lot of surface starch that can turn your pot into a gluey mess. Place the rice in a bowl and rinse it with cold water, swirling it gently with your hand. Pour off the cloudy water and repeat this 3–5 times until the water runs nearly clear.<br><br><strong>Want to go pro?</strong> Let it soak in clean water for 20–30 minutes before cooking: This helps the grains absorb water evenly and cook through with that signature bouncy texture.",
+    "tip2": "After your rice is cooked, <strong>do not fluff it immediately.</strong> Let it sit, covered and untouched, for 10–15 minutes to steam in its own heat.<br><br>This resting period allows the grains to firm up slightly and release excess moisture. Then fluff with a paddle or fork using slicing motions, not stirring. This keeps the grains separate and light.<br><br><strong>Finish with a splash of seasoned rice vinegar</strong> if you’re making sushi, or fold in toasted sesame seeds and furikake for a simple upgrade."
   }
 ]
