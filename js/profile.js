@@ -15,6 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
     updateHeader(); //comes from components.js
     window.location.href = "index.html";
   });
+
+  //PROFILE INFO
+
+  const name = document.getElementById("name");
+  const surname = document.getElementById("surname");
+  const email = document.getElementById("email");
+  if (user.firstName) {
+    name.textContent = `Name: ${user.firstName}`;
+  }
+  if (user.lastName) {
+    surname.textContent = `Surname: ${user.lastName}`;
+  }
+  if (user.firstName) {
+    email.textContent = `E-mail: ${user.email}`;
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
