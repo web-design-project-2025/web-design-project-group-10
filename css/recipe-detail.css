@@ -73,6 +73,8 @@ body {
   display: flex;
   margin-right: 30px;
 }
+/*this part of code is inspired through chatgpt and guided, check the link for further information
+ https://chatgpt.com/share/68236a3d-74e4-8002-b6c0-1d3d3e135161 */
 .star {
   font-size: 24px;
   color: #ccc; /* Empty star color */
