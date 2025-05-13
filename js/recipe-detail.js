@@ -11,14 +11,24 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".recipe-title").textContent = recipe.title;
       document.querySelector(".recipe-category").textContent = recipe.category;
       document.querySelector(".recipe-time").textContent = recipe.prepTime;
-      document.querySelector(".recipe-rating").textContent = recipe.rating;
+      const rating = recipe.rating || "0";
+      document
+        .querySelector(".recipe-rating")
+        .setAttribute("data-rating", rating);
+      console.log(`Setting data-rating: ${rating}`);
+      // the next two lines of code are inspired through chatgpt and guided, check the link for further information
+      // https://chatgpt.com/share/68236a3d-74e4-8002-b6c0-1d3d3e135161
+
+      const ratingEvent = new Event("ratingLoaded");
+      document.dispatchEvent(ratingEvent);
+
       document.querySelector(
         ".hero-image"
       ).style.backgroundImage = `url(${recipe["hero-img"]})`;
 
       // Ingredients
       const ingredientsList = document.querySelector(".ingredients-list");
-      ingredientsList.innerHTML = ""; // Clear any previous content
+      ingredientsList.innerHTML = "";
       recipe.ingredients.forEach((item) => {
         const li = document.createElement("li");
         li.innerHTML = `<label><input type="checkbox" /><span></span> ${item}</label>`;
@@ -57,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => {
       console.error("Error loading recipe data:", error);
     });
+
   const toggleIngredientsBtn = document.getElementById("toggle-ingredients");
   const ingredientsSection = document.querySelector(".ingredients");
   const stepsSection = document.querySelector(".steps");
@@ -75,23 +86,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Only run toggle logic on small screens
   if (window.innerWidth <= 820 && toggleIngredientsBtn) {
     toggleIngredientsBtn.addEventListener("click", handleToggle);
   }
 
   function moveIngredientsSection() {
-    var ingredients = document.querySelector(".ingredients");
-    var leftPanel = document.querySelector(".left-panel");
-    var rightPanel = document.querySelector(".right-panel");
+    const ingredients = document.querySelector(".ingredients");
+    const leftPanel = document.querySelector(".left-panel");
+    const rightPanel = document.querySelector(".right-panel");
     if (window.innerWidth <= 820) {
       if (!rightPanel.contains(ingredients)) {
-        // Move it into the right panel
         rightPanel.appendChild(ingredients);
       }
     } else {
       if (!leftPanel.contains(ingredients)) {
-        // Move it back into the left panel
         leftPanel.appendChild(ingredients);
       }
     }

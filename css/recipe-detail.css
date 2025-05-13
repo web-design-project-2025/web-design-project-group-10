@@ -58,18 +58,45 @@ body {
   flex-direction: column;
   gap: 30px;
 }
+/*RATING*/
 .rating {
   display: flex;
+  align-items: center;
   margin-top: 20px;
 }
 .rating p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+  color: #ccc;
 }
-.rating img {
-  margin: 0 10px 0 50px;
-  width: 25px;
-  height: 28px;
+.recipe-rating {
+  display: flex;
+  margin-right: 30px;
+}
+.star {
+  font-size: 24px;
+  color: #ccc; /* Empty star color */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.star.full {
+  color: #e0a800; /* Full star color */
+}
+.star.partial {
+  position: relative;
+  color: #ccc;
+}
+.star.partial::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e0a800;
+  overflow: hidden;
+  width: var(--fill-width);
 }
 
 /* Ingredients */
