@@ -2,6 +2,7 @@
   margin-top: 6rem;
   display: flex;
   justify-content: end;
+  margin-bottom: 3rem;
 }
 
 #profile-welcome {
@@ -37,13 +38,17 @@
 }
 
 .profile-text {
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  color: #555;
+  font-family: "nunito", sans-serif;
+  font-size: 18px;
+  margin-top: 1rem;
+  color: #28396c;
 }
 
 .profile-info {
   text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
 }
 
 #favorites-section {
@@ -51,6 +56,7 @@
   padding-top: 2rem;
   text-align: center;
   margin: 0 auto;
+  font-size: 18px;
 }
 
 #favorite-recipes-list {
@@ -74,7 +80,7 @@
 #profile-nav button {
   font-family: "nunito", sans-serif;
   padding: 7px 16px;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;

@@ -62,7 +62,6 @@
   transition: all 0.3s ease;
   background-color: #5a764b;
   color: white;
-
   border: 2px solid #5a764b;
 }
 .log-buttons a {
@@ -116,8 +115,8 @@
 }
 
 .user-icon img {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   vertical-align: middle;
   transition: opacity 0.3s;
 }
@@ -125,7 +124,7 @@
 #sign-out-btn {
   font-family: "nunito", sans-serif;
   padding: 7px 14px;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
