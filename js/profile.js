@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("avatar").src = avatarUrl;
 });
 
+// PROFILE NAVIGATION
+
 const profileElement = document.getElementById("profile-section");
 const favoritesElement = document.getElementById("favorites-section");
 const buttonElementProfile = document.getElementById("profile-button");

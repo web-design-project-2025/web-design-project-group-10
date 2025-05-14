@@ -27,7 +27,7 @@ body {
   display: flex;
 }
 
-#icon {
+.icon {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -37,7 +37,7 @@ body {
   box-shadow: 4px 4px 10px #dbd1ca;
   transition: transform 0.3s ease;
 }
-#icon:hover {
+.icon:hover {
   cursor: pointer;
   transform: translateY(-10px);
 }
