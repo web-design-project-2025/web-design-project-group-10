@@ -5,22 +5,22 @@
   text-align: center;
   font-family: "moby-primo-variable", sans-serif;
   color: #fcf9ee;
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .login-title {
-  font-size: 2rem;
+  font-size: 34px;
   color: #cb4325;
   letter-spacing: 2px;
-  margin-bottom: 0;
+  margin-bottom: 6.4px;
 }
 
 .login-subtitle {
   font-family: "nunito", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: #28396c;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .login-btn {
-  max-width: 150px;
-  padding: 0.5rem 1.5rem;
+  max-width: 100px;
+  padding: 9px 19px;
   background-color: #5b7b44;
   color: #fcf9ee;
   border: none;

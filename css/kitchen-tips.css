@@ -12,15 +12,17 @@ main h1 {
   color: #d94f30;
   font-weight: 300;
   text-align: center;
-  font-size: 2rem;
+  font-size: 34px;
+  margin-bottom: 6.4px;
 }
 
 main h2 {
   font-family: "nunito", monospace;
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 400;
   color: #28396c;
   text-align: center;
+  margin-top: 0;
 }
 
 main p {
@@ -98,14 +100,15 @@ main p {
   margin: -10px auto;
   background-color: #5a764b;
   color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 600;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: "nunito", sans-serif;
   z-index: 1000;
-  transition: background 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 #shuffle:hover {
