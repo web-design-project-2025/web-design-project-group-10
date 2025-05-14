@@ -51,6 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// API PROFILE PIC
+
+document.addEventListener("DOMContentLoaded", () => {
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
+
+  const avatarUrl = `https://api.dicebear.com/9.x/fun-emoji/svg?seed=${user.firstName}`;
+  document.getElementById("avatar").src = avatarUrl;
+});
+
 const profileElement = document.getElementById("profile-section");
 const favoritesElement = document.getElementById("favorites-section");
 const buttonElementProfile = document.getElementById("profile-button");

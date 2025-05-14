@@ -11,18 +11,46 @@
 }
 
 #profile-section {
-  margin: 2rem;
-  padding: 2rem;
   text-align: center;
-  max-width: 1400px;
+  max-width: 900px;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
   border: 4px solid #e0a800;
   border-radius: 1rem;
+  background-color: #fffef5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.avatar img {
+  width: 150px;
+  border-radius: 20%;
+  border: 4px solid #e0a800;
+}
+
+.profile-text {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.profile-info {
+  text-align: left;
 }
 
 #favorites-section {
   display: none;
   padding-top: 2rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 #favorite-recipes-list {
@@ -30,8 +58,11 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
   max-width: 1400px;
-  margin: 70px auto;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 #profile-nav {
@@ -79,4 +110,29 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInGoUp 0.6s ease forwards;
+}
+
+@media (max-width: 750px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+
+  #profile-section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .avatar img {
+    width: 120px;
+  }
+
+  #log-out-section {
+    margin-bottom: 2rem;
+  }
 }
