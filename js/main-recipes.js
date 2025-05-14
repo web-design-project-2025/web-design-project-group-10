@@ -82,9 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card.innerHTML = `
     <div class="recipe-image-wrapper">
-      <div class="big-image">
-        <img src="${recipe.image}" alt="${recipe.title}">
-      </div>
+        <a href="recipe-detail.html?id=${recipe.id}" class="big-image">
+          <img src="${recipe.image}" alt="${recipe.title}">
+        </a>
       <div class="icon-star">
         <img src="img/star-full.png" alt="Star">
         <span>${recipe.rating}</span>
