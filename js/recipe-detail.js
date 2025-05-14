@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("json/recipe-card.json")
     .then((response) => response.json())
     .then((recipes) => {
-      const recipe = recipes.find((r) => r.id === recipeId) || recipes[0]; // Fallback to the first recipe if not found
+      const recipe = recipes.find((r) => r.id === recipeId); // Fallback to the first recipe if not found
 
       document.querySelector(".recipe-title").textContent = recipe.title;
       document.querySelector(".recipe-category").textContent = recipe.category;
