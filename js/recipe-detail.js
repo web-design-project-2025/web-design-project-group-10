@@ -63,7 +63,24 @@ document.addEventListener("DOMContentLoaded", () => {
           ? "Nutrition Info ▼"
           : "Nutrition Info ▲";
       });
+
+      // The following code was added through the help of ChatGPT 4o
+      //https://chatgpt.com/share/68249bf8-afe8-800e-b816-9700c933b196
+      const heartIcon = document.querySelector(".icon");
+
+      let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+      const isFavorite = favorites.includes(recipe.id);
+
+      heartIcon.src = isFavorite
+        ? "img/heart-empty-icon.png"
+        : "img/heart-empty-outline.png";
+
+      heartIcon.addEventListener("click", function () {
+        handleHeartClick(heartIcon, recipe.id);
+      });
     })
+    // END OF CITATION
+
     .catch((error) => {
       console.error("Error loading recipe data:", error);
     });
@@ -106,4 +123,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   moveIngredientsSection();
   window.addEventListener("resize", moveIngredientsSection);
+
+  // The following code was added through the help of ChatGPT 4o
+  //https://chatgpt.com/share/68249bf8-afe8-800e-b816-9700c933b196
+  function handleHeartClick(heartIcon, recipeId) {
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    if (favorites.includes(recipeId)) {
+      favorites = favorites.filter((id) => id !== recipeId);
+      heartIcon.src = "img/heart-empty-outline.png";
+    } else {
+      favorites.push(recipeId);
+      heartIcon.src = "img/heart-empty-icon.png";
+    }
+
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }
+  // END OF CITATION
 });
