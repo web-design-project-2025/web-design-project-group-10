@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     userName.textContent = `Hello, ${user.firstName} ${user.lastName}`;
   }
 
-  //Logout
+  //Logout logic
   const signOutBtn = document.getElementById("sign-out-btn");
   signOutBtn.addEventListener("click", () => {
     const user = JSON.parse(localStorage.getItem("user") || "{}");
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //PROFILE INFO
-
   const name = document.getElementById("name");
   const surname = document.getElementById("surname");
   const email = document.getElementById("email");
@@ -52,16 +51,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // API PROFILE PIC
-
 document.addEventListener("DOMContentLoaded", () => {
   const user = JSON.parse(localStorage.getItem("user") || "{}");
-
+  const avatarElement = document.getElementById("avatar");
+  if (!avatarElement) throw new Error("Avatar element not found");
   const avatarUrl = `https://api.dicebear.com/9.x/fun-emoji/svg?seed=${user.firstName}`;
-  document.getElementById("avatar").src = avatarUrl;
+  avatarElement.src = avatarUrl;
+  avatarElement.onerror = () => {
+    console.error("Failed to load avatar image");
+    avatarElement.src = "img/default-avatar-png"; //Default image if element doesn't load.
+  };
 });
 
 // PROFILE NAVIGATION
-
 const profileElement = document.getElementById("profile-section");
 const favoritesElement = document.getElementById("favorites-section");
 const buttonElementProfile = document.getElementById("profile-button");
