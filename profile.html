@@ -16,7 +16,7 @@
 
     <main>
       <section id="log-out-section">
-        <button id="sign-out-btn">Sign out</button>
+        <button aria-label="sign out" id="sign-out-btn">Sign out</button>
       </section>
 
       <section id="profile-welcome">
@@ -24,15 +24,17 @@
       </section>
 
       <section id="profile-nav">
-        <button id="profile-button">Profile</button>
-        <button id="favorites-button">Favorites</button>
+        <button aria-label="profile button" id="profile-button">Profile</button>
+        <button aria-label="favorite recipes button" id="favorites-button">
+          Favorites
+        </button>
       </section>
 
-      <section id="profile-section">
+      <section aria-label="your profile" id="profile-section">
         <h2 class="section-title">PROFILE</h2>
         <div class="profile-container">
           <figure class="avatar">
-            <img id="avatar" src="" alt="" />
+            <img aria-label="Your profile picture" id="avatar" src="" alt="" />
             <p class="profile-text">
               Your avatar is generated through your first name
             </p>
@@ -45,7 +47,7 @@
         </div>
       </section>
 
-      <section id="favorites-section">
+      <section aria-label="favorite recipes" id="favorites-section">
         <h2 class="section-title">FAVORITES</h2>
         <p class="section-subtext">All your favourite recipes. In one place</p>
         <div id="favorite-recipes-list"></div>
