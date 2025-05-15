@@ -18,6 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("div");
         card.classList.add("recipe-card");
 
+        // This code was modified with the help of ChatGPT 4o to fix issues where
+        // the screen reloads when removing a favorite recipe
+        // https://chatgpt.com/share/6825e60c-7c98-800e-b17a-b42763d6c88e
+
+        card.setAttribute("data-id", recipe.id); // Set data-id for easier removal
+
+        // End of citation
+
         card.innerHTML = `
           <div class="recipe-image-wrapper">
             <a href="recipe-detail.html?id=${recipe.id}" class="big-image">
@@ -36,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="recipe-details">
               <img src="img/leaf.png" alt="Leaf" class="leaf-icon">
               <div class="recipe-time">
-                <svg xmlns="http://www.w3.org/2000/svg" class="clock" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="CurrentColor" stroke-width="2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="clock" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
@@ -55,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     });
+
   function handleHeartClick(heartIcon, recipeId) {
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
@@ -62,15 +71,31 @@ document.addEventListener("DOMContentLoaded", () => {
       // REMOVE from favorites
       favorites = favorites.filter((id) => id !== recipeId);
       heartIcon.src = "img/heart-icon.png";
+
+      // This code was modified with the help of ChatGPT 4o to fix issues where
+      // the screen reloads when removing a favorite recipe
+      // https://chatgpt.com/share/6825e60c-7c98-800e-b17a-b42763d6c88e
+
+      // Remove the recipe card from the DOM
+      const cardToRemove = document.querySelector(
+        `.recipe-card[data-id="${recipeId}"]`
+      );
+      if (cardToRemove) {
+        cardToRemove.remove();
+      }
+
+      // If there are no favorites left, display the empty message
+      if (favorites.length === 0) {
+        favouriteContainer.innerHTML =
+          "<p>No recipes have been added to your favorites!</p>";
+      }
+      // End of citation
     } else {
       // ADD to favorites
       favorites.push(recipeId);
       heartIcon.src = "img/heart-full.png";
     }
 
-    // Save updated favorites to localStorage
     localStorage.setItem("favorites", JSON.stringify(favorites));
-    //Refreshes page when favourite gets removed from list
-    location.reload();
   }
 });
