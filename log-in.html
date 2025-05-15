@@ -13,13 +13,25 @@
   </head>
   <body>
     <div id="header-place"></div>
-    <main class="login-container">
-      <h2 class="login-title">LOG IN</h2>
+    <main class="login-container" aria-label="Log in form section">
+      <h2 class="login-title" id="login-form-title">LOG IN</h2>
       <p class="login-subtitle">Welcome back to NomNom!</p>
-      <form id="login-form">
-        <input type="email" id="email" placeholder="Your email" required />
-        <input type="password" id="password" placeholder="Password" required />
-        <button type="submit" class="login-btn">Log in</button>
+      <form id="login-form" aria-labelledby="login-form-title">
+        <input
+          type="email"
+          id="email"
+          placeholder="Your email"
+          aria-label="email address"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          aria-label="password"
+        />
+        <button type="submit" class="login-btn" aria-label="submit log in form">
+          Log in
+        </button>
       </form>
     </main>
     <div id="footer-place"></div>

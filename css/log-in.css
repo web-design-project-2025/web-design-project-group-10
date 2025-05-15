@@ -61,21 +61,21 @@
 
 @media (max-width: 600px) {
   .login-container {
-    margin: 3rem auto;
+    margin-right: 1.5rem;
+    margin-top: 6rem;
   }
   .login-title {
     font-size: 1.5rem;
+    margin-left: 1.5rem;
   }
-
   .login-subtitle {
     font-size: 0.95rem;
+    margin-left: 1.5rem;
   }
-
   #login-form input {
     font-size: 0.95rem;
     padding: 0.65rem;
   }
-
   .login-btn {
     width: 100%;
     max-width: 100px;

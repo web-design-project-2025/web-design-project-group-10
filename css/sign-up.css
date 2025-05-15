@@ -73,3 +73,26 @@
 .signup-btn:hover {
   background-color: #4e6535;
 }
+
+@media (max-width: 600px) {
+  .signup-container {
+    margin-top: 6rem;
+    margin-right: 1.5rem;
+  }
+  .signup-title {
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .signup-subtitle {
+    font-size: 0.95rem;
+    margin-left: 1.5rem;
+  }
+  #signup-form input {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+  .signup-btn {
+    width: 100%;
+    max-width: 100px;
+  }
+}
