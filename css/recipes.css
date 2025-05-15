@@ -229,6 +229,12 @@ main {
   justify-content: center;
   width: 30px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon-heart:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .recipe-content {
