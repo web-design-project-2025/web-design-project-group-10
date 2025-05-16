@@ -21,36 +21,36 @@ NomNom is an intuitive, Japanese-inspired recipe website designed for home chefs
 ## Repository Structure
 
 ## /css/                  # Stylesheets for different pages
--main.css          # Styles for index.html (carousels, layout)
--recipes.css       # Styles for recipes.html (filtering, cards)
--recipe-detail.css # Styles for recipe-detail.html (rating, steps)
--kitchen-tips.css  # Styles for kitchen-tips.html (tips layout)
--sign-up.css       # Styles for sign-up.html (form design)
--log-in.css        # Styles for log-in.html (form design)
--contact-us.css    # Styles for contact-us.html (form design)
+- main.css          # Styles for index.html (carousels, layout)
+- recipes.css       # Styles for recipes.html (filtering, cards)
+- recipe-detail.css # Styles for recipe-detail.html (rating, steps)
+- kitchen-tips.css  # Styles for kitchen-tips.html (tips layout)
+- sign-up.css       # Styles for sign-up.html (form design)
+- log-in.css        # Styles for log-in.html (form design)
+- contact-us.css    # Styles for contact-us.html (form design)
 
 ## /js/                   # JavaScript files for interactivity
--main-recipes.js   # Carousel logic for index.html
--filter-recipes.js # Filtering and sorting for recipes.html
--recipe-detail.js  # Recipe detail loading for recipe-detail.html
--kitchen-tips.js   # Tips rendering for kitchen-tips.html
--input-logic.js    # Form validation for sign-up, login, contact
--star-rating.js    # Star rating system for recipe ratings
--carousel.js       # Static image carousel logic
+- main-recipes.js   # Carousel logic for index.html
+- filter-recipes.js # Filtering and sorting for recipes.html
+- recipe-detail.js  # Recipe detail loading for recipe-detail.html
+- kitchen-tips.js   # Tips rendering for kitchen-tips.html
+- input-logic.js    # Form validation for sign-up, login, contact
+- star-rating.js    # Star rating system for recipe ratings
+- carousel.js       # Static image carousel logic
 
 ## /json/                 # Data files for dynamic content
--recipe-card.json  # Recipe data (36 recipes)
--kitchen-tips.json # Detailed kitchen tips (3 tips)
--quick-tips.json   # Quick tips (27 tips)
+- recipe-card.json  # Recipe data (36 recipes)
+- kitchen-tips.json # Detailed kitchen tips (3 tips)
+- quick-tips.json   # Quick tips (27 tips)
 
 ## /html/                 # HTML templates
--index.html        # Homepage with recipe carousels
--recipes.html      # Recipes page with filtering
--recipe-detail.html # Individual recipe page
--kitchen-tips.html # Kitchen tips page
--sign-up.html      # Sign-up form page
--log-in.html       # Login form page
--contact-us.html   # Contact form page
+- index.html        # Homepage with recipe carousels
+- recipes.html      # Recipes page with filtering
+- recipe-detail.html # Individual recipe page
+- kitchen-tips.html # Kitchen tips page
+- sign-up.html      # Sign-up form page
+- log-in.html       # Login form page
+- contact-us.html   # Contact form page
 
 # Git Workflow
 We use a structured Git workflow to track progress and collaborate effectively:
